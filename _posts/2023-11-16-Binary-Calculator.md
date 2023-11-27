@@ -9,13 +9,11 @@ courses: { csp: {week: 13} }
 ---
 
 
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary Calculator</title>
+    <title>Decimal to Binary Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,15 +40,15 @@ courses: { csp: {week: 13} }
 </head>
 <body>
 
-<h1>Binary Calculator</h1>
+<h1>Decimal to Binary Calculator</h1>
 
-<form id="binaryCalculator">
-    <label for="num1">Binary Number 1:</label>
-    <input type="text" id="num1" readonly>
+<form id="decimalToBinaryCalculator">
+    <label for="num1">Decimal Number 1:</label>
+    <input type="text" id="num1" placeholder="Enter decimal number">
     <br>
 
-    <label for="num2">Binary Number 2:</label>
-    <input type="text" id="num2" readonly>
+    <label for="num2">Decimal Number 2:</label>
+    <input type="text" id="num2" placeholder="Enter decimal number">
     <br>
 
     <button type="button" onclick="performOperation('add')">Addition (+)</button>
@@ -59,14 +57,14 @@ courses: { csp: {week: 13} }
     <button type="button" onclick="performOperation('divide')">Division (/)</button>
     <br>
 
-    <label for="result">Result:</label>
+    <label for="result">Result (Binary):</label>
     <input type="text" id="result" readonly>
 </form>
 
 <div class="keyboard">
-    <!-- Generate number buttons from 1 to 1001 -->
+    <!-- Generate number buttons from 0 to 9 -->
     <?php
-    for ($i = 1; $i <= 1001; $i++) {
+    for ($i = 0; $i <= 9; $i++) {
         echo "<button onclick=\"addToInput($i)\">$i</button>";
     }
     ?>
@@ -80,51 +78,35 @@ courses: { csp: {week: 13} }
 
         switch (operation) {
             case 'add':
-                resultField.value = addBinary(num1, num2);
+                resultField.value = decimalToBinary(binaryToDecimal(num1) + binaryToDecimal(num2));
                 break;
             case 'subtract':
-                resultField.value = subtractBinary(num1, num2);
+                resultField.value = decimalToBinary(binaryToDecimal(num1) - binaryToDecimal(num2));
                 break;
             case 'multiply':
-                resultField.value = multiplyBinary(num1, num2);
+                resultField.value = decimalToBinary(binaryToDecimal(num1) * binaryToDecimal(num2));
                 break;
             case 'divide':
-                resultField.value = divideBinary(num1, num2);
+                resultField.value = decimalToBinary(Math.floor(binaryToDecimal(num1) / binaryToDecimal(num2)));
                 break;
             default:
                 resultField.value = "Invalid operation";
         }
     }
 
-    function addBinary(binNum1, binNum2) {
-        var decimalSum = parseInt(binNum1, 2) + parseInt(binNum2, 2);
-        return decimalSum.toString(2);
+    function decimalToBinary(decimalNum) {
+        return (decimalNum >>> 0).toString(2); // Using ">>> 0" to treat the input as a 32-bit unsigned integer
     }
 
-    function subtractBinary(binNum1, binNum2) {
-        var decimalDiff = parseInt(binNum1, 2) - parseInt(binNum2, 2);
-        return decimalDiff.toString(2);
-    }
-
-    function multiplyBinary(binNum1, binNum2) {
-        var decimalProd = parseInt(binNum1, 2) * parseInt(binNum2, 2);
-        return decimalProd.toString(2);
-    }
-
-    function divideBinary(binNum1, binNum2) {
-        var decimalQuotient = Math.floor(parseInt(binNum1, 2) / parseInt(binNum2, 2));
-        return decimalQuotient.toString(2);
+    function binaryToDecimal(binaryStr) {
+        return parseInt(binaryStr, 2);
     }
 
     function addToInput(number) {
-        var num1Input = document.getElementById("num1");
-        var num2Input = document.getElementById("num2");
+        var activeInput = document.activeElement;
 
-        // Check which input field is active and add the number to it
-        if (num1Input === document.activeElement) {
-            num1Input.value += number.toString(2);
-        } else if (num2Input === document.activeElement) {
-            num2Input.value += number.toString(2);
+        if (activeInput.tagName === "INPUT" && activeInput.type === "text") {
+            activeInput.value += number;
         }
     }
 </script>
