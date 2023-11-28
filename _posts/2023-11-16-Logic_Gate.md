@@ -2,6 +2,10 @@
 layout: home
 search_exclude: true
 ---
+---
+layout: home
+search_exclude: true
+---
 <!-- Metadata section -->
 
 <!-- HTML document structure -->
@@ -12,10 +16,10 @@ search_exclude: true
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
  <!-- Title of the webpage -->
- <title>Logical Gates Simulator</title>
+<title>Logical Gates Simulator</title>
     
  <!-- Styling for the webpage -->
-<style>
+ <style>
         /* Global styles for the body */
         body {
             font-family: Arial, sans-serif;
@@ -87,7 +91,7 @@ search_exclude: true
     </style>
     
  <!-- Include Font Awesome CSS for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Bw+irXzAGYTW3oIUcI+5B3c5AcXKXtwJU6dRfkaOTpAupzWC8FX6C9AjbV8AGj8G/oPfOj0lg/9hbo+KwIzA4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Bw+irXzAGYTW3oIUcI+5B3c5AcXKXtwJU6dRfkaOTpAupzWC8FX6C9AjbV8AGj8G/oPfOj0lg/9hbo+KwIzA4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -100,13 +104,13 @@ search_exclude: true
             <button id="andButton1" class="button" onclick="toggleButton('and', 1)">1</button>
         </div>
 
- <!-- Button 2 for AND gate -->
-<div class="button-container">
+<!-- Button 2 for AND gate -->
+ <div class="button-container">
             <button id="andButton2" class="button" onclick="toggleButton('and', 2)">0</button>
         </div>
 
  <!-- SVG representation of AND gate -->
-<svg width="150" height="70">
+  <svg width="150" height="70">
             <text x="35" y="60" font-size="12" fill="white">AND</text>
             <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2"/>
             <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2"/>
@@ -120,8 +124,8 @@ search_exclude: true
         </div>
     </div>
 
- <!-- OR Gate -->
- <div class="gate-container">
+<!-- OR Gate -->
+<div class="gate-container">
         <!-- Button 1 for OR gate -->
         <div class="button-container">
             <button id="orButton1" class="button" onclick="toggleButton('or', 1)">1</button>
@@ -147,32 +151,32 @@ search_exclude: true
         </div>
     </div>
 
- <!-- NOR Gate -->
-<div class="gate-container">
+<!-- NOR Gate -->
+ <div class="gate-container">
         <!-- Button 1 for NOR gate -->
         <div class="button-container">
             <button id="norButton1" class="button" onclick="toggleButton('nor', 1)">1</button>
         </div>
 
- <!-- Button 2 for NOR gate -->
- <div class="button-container">
+  <!-- Button 2 for NOR gate -->
+  <div class="button-container">
             <button id="norButton2" class="button" onclick="toggleButton('nor', 2)">0</button>
         </div>
 
-<!-- SVG representation of NOR gate -->
+ <!-- SVG representation of NOR gate -->
  <svg width="150" height="70">
             <text x="35" y="60" font-size="12" fill="white">NOR</text>
             <circle id="norGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
         </svg>
 
-<!-- Output icon for NOR gate -->
-<div class="button-container">
+ <!-- Output icon for NOR gate -->
+ <div class="button-container">
             <i id="norOutputIcon" class="fas fa-lightbulb output-icon nor-bulb"></i>
         </div>
     </div>
 
- <!-- XOR Gate -->
-<div class="gate-container">
+<!-- XOR Gate -->
+ <div class="gate-container">
         <!-- Button 1 for XOR gate -->
         <div class="button-container">
             <button id="xorButton1" class="button" onclick="toggleButton('xor', 1)">1</button>
@@ -184,13 +188,13 @@ search_exclude: true
         </div>
 
  <!-- SVG representation of XOR gate -->
-<svg width="150" height="70">
+  <svg width="150" height="70">
             <text x="35" y="60" font-size="12" fill="white">XOR</text>
             <circle id="xorGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
         </svg>
 
- <!-- Output icon for XOR gate -->
-<div class="button-container">
+  <!-- Output icon for XOR gate -->
+ <div class="button-container">
             <i id="xorOutputIcon" class="fas fa-lightbulb output-icon xor-bulb"></i>
         </div>
     </div>
