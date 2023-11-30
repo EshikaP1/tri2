@@ -1,6 +1,11 @@
 ---
-layout: home
-search_exclude: true
+toc: true
+comments: false
+layout: post
+title: Logic Gate code
+description: N/A
+type: ccc
+courses: { csp: {week: 13} }
 ---
 <!-- Metadata section -->
 

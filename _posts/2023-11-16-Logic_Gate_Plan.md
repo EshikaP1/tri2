@@ -1,10 +1,11 @@
 ---
 toc: true
 comments: false
-hide: true
 layout: post
-type: help
-title: GitHub Overview
+title: Logic Gate plaan 
+description: N/A
+type: ccc
+courses: { csp: {week: 13} }
 ---
 # Plans for Logic Gates 
 
