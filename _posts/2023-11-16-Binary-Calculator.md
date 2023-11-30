@@ -63,11 +63,11 @@ courses: { csp: {week: 13} }
 
 <div class="keyboard">
     <!-- Generate number buttons from 0 to 9 -->
-    <?php
-    for ($i = 0; $i <= 9; $i++) {
-        echo "<button onclick=\"addToInput($i)\">$i</button>";
-    }
-    ?>
+    <script>
+        for (var i = 0; i <= 9; i++) {
+            document.write("<button onclick=\"addToInput('" + i + "')\">" + i + "</button>");
+        }
+    </script>
 </div>
 
 <script>
@@ -76,18 +76,22 @@ courses: { csp: {week: 13} }
         var num2 = document.getElementById("num2").value;
         var resultField = document.getElementById("result");
 
+        // Convert input numbers to binary
+        var binaryNum1 = decimalToBinary(parseInt(num1, 10));
+        var binaryNum2 = decimalToBinary(parseInt(num2, 10));
+
         switch (operation) {
             case 'add':
-                resultField.value = decimalToBinary(binaryToDecimal(num1) + binaryToDecimal(num2));
+                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) + binaryToDecimal(binaryNum2));
                 break;
             case 'subtract':
-                resultField.value = decimalToBinary(binaryToDecimal(num1) - binaryToDecimal(num2));
+                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) - binaryToDecimal(binaryNum2));
                 break;
             case 'multiply':
-                resultField.value = decimalToBinary(binaryToDecimal(num1) * binaryToDecimal(num2));
+                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) * binaryToDecimal(binaryNum2));
                 break;
             case 'divide':
-                resultField.value = decimalToBinary(Math.floor(binaryToDecimal(num1) / binaryToDecimal(num2)));
+                resultField.value = decimalToBinary(Math.floor(binaryToDecimal(binaryNum1) / binaryToDecimal(binaryNum2)));
                 break;
             default:
                 resultField.value = "Invalid operation";
