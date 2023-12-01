@@ -1,13 +1,12 @@
 ---
 toc: true
-comments: true
+comments: false
 layout: post
-title: Student Teaching - 5.5 Legal and Ethical Concerns
-description: Group student teach Per. 5 CSP
-type: tangibles
-courses: { compsci: {week: 1} }
+title: Student Teach
+description: N/A
+type: ccc
+courses: { csp: {week: 13} }
 ---
-
 
 # Notes from AP Classroom video
 - Essential Knowledge
@@ -41,3 +40,5 @@ courses: { compsci: {week: 1} }
         - open access
         note: we can add exactly what the consequences are, like if it's a fine, fine is $250,000
 ,
+
+![Commit](image.png)

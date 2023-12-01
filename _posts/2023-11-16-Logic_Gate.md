@@ -7,12 +7,14 @@ description: N/A
 type: ccc
 courses: { csp: {week: 13} }
 ---
+
 <!-- Metadata section -->
 
 <!-- HTML document structure -->
 <html lang="en">
 <head>
     <!-- Metadata for character set and viewport -->
+    <!-- this is done to specify the characters as well as the way the page is viewed and scaled -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -89,6 +91,13 @@ courses: { csp: {week: 13} }
             margin-right: 10px;
             fill: white; /* Change text color to white */
         }
+     /* Styling for Christmas Tree container */
+.tree-container {
+    position: relative;
+    margin-top: 20px; /* Adjust as needed */
+    margin-left: 50px; /* Adjust as needed */
+}
+
     </style>
     
 <!-- Include Font Awesome CSS for icons -->
@@ -98,198 +107,249 @@ courses: { csp: {week: 13} }
 
 <!-- Main content container -->
 <div class="container">
-    <!-- AND Gate -->
-    <div class="gate-container">
-        <!-- Button 1 for AND gate -->
-        <div class="button-container">
-            <button id="andButton1" class="button" onclick="toggleButton('and', 1)">1</button>
-        </div>
-
-<!-- Button 2 for AND gate -->
+        <!-- AND Gate -->
+        <div class="gate-container">
+<!-- Button 1 for AND gate -->
 <div class="button-container">
-            <button id="andButton2" class="button" onclick="toggleButton('and', 2)">0</button>
-        </div>
+                <button id="andButton1" class="button" onclick="toggleButton('and', 1)">1</button>
+            </div>
+
+ <!-- Button 2 for AND gate -->
+ <div class="button-container">
+                <button id="andButton2" class="button" onclick="toggleButton('and', 2)">0</button>
+            </div>
 
 <!-- SVG representation of AND gate -->
-<svg width="150" height="70">
-            <text x="35" y="60" font-size="12" fill="white">AND</text>
-            <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2"/>
-            <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2"/>
-            <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2"/>
-            <circle id="andGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
-        </svg>
+ <svg width="150" height="70">
+                <text x="35" y="60" font-size="12" fill="white">AND</text>
+                <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2"/>
+                <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2"/>
+                <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2"/>
+                <circle id="andGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
+            </svg>
 
-<!-- Output icon for AND gate -->
-<div class="button-container">
-            <i id="andOutputIcon" class="fas fa-lightbulb output-icon and-bulb"></i>
+ <!-- Output icon for AND gate -->
+ <div class="button-container">
+                <i id="andOutputIcon" class="fas fa-lightbulb output-icon and-bulb"></i>
+            </div>
         </div>
-    </div>
 
-<!-- OR Gate -->
-<div class="gate-container">
-        <!-- Button 1 for OR gate -->
-        <div class="button-container">
-            <button id="orButton1" class="button" onclick="toggleButton('or', 1)">1</button>
-        </div>
+ <!-- OR Gate -->
+ <div class="gate-container">
+            <!-- Button 1 for OR gate -->
+            <div class="button-container">
+                <button id="orButton1" class="button" onclick="toggleButton('or', 1)">1</button>
+            </div>
 
 <!-- Button 2 for OR gate -->
-<div class="button-container">
-            <button id="orButton2" class="button" onclick="toggleButton('or', 2)">0</button>
-        </div>
+ <div class="button-container">
+                <button id="orButton2" class="button" onclick="toggleButton('or', 2)">0</button>
+            </div>
 
 <!-- SVG representation of OR gate -->
-<svg width="150" height="70">
-            <text x="35" y="60" font-size="12" fill="white">OR</text>
-            <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2"/>
-            <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2"/>
-            <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2"/>
-            <circle id="orGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
-        </svg>
+\<svg width="150" height="70">
+                <text x="35" y="60" font-size="12" fill="white">OR</text>
+                <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2"/>
+                <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2"/>
+                <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2"/>
+                <circle id="orGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
+            </svg>
 
-<!-- Output icon for OR gate -->
-<div class="button-container">
-            <i id="orOutputIcon" class="fas fa-lightbulb output-icon or-bulb"></i>
+ <!-- Output icon for OR gate -->
+ <div class="button-container">
+                <i id="orOutputIcon" class="fas fa-lightbulb output-icon or-bulb"></i>
+            </div>
         </div>
-    </div>
 
 <!-- NOR Gate -->
 <div class="gate-container">
-        <!-- Button 1 for NOR gate -->
-        <div class="button-container">
-            <button id="norButton1" class="button" onclick="toggleButton('nor', 1)">1</button>
-        </div>
-
-<!-- Button 2 for NOR gate -->
-<div class="button-container">
-            <button id="norButton2" class="button" onclick="toggleButton('nor', 2)">0</button>
-        </div>
-
+            <!-- Button 1 for NOR gate -->
+            <div class="button-container">
+                <button id="norButton1" class="button" onclick="toggleButton('nor', 1)">1</button>
+            </div>
+ <!-- Button 2 for NOR gate -->
+  <div class="button-container">
+                <button id="norButton2" class="button" onclick="toggleButton('nor', 2)">0</button>
+            </div>
 <!-- SVG representation of NOR gate -->
 <svg width="150" height="70">
-            <text x="35" y="60" font-size="12" fill="white">NOR</text>
-            <circle id="norGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
-        </svg>
-
-<!-- Output icon for NOR gate -->
-<div class="button-container">
-            <i id="norOutputIcon" class="fas fa-lightbulb output-icon nor-bulb"></i>
+                <text x="35" y="60" font-size="12" fill="white">NOR</text>
+                <circle id="norGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
+            </svg>
+ <!-- Output icon for NOR gate -->
+ <div class="button-container">
+                <i id="norOutputIcon" class="fas fa-lightbulb output-icon nor-bulb"></i>
+            </div>
         </div>
-    </div>
 
 <!-- XOR Gate -->
 <div class="gate-container">
-        <!-- Button 1 for XOR gate -->
-        <div class="button-container">
-            <button id="xorButton1" class="button" onclick="toggleButton('xor', 1)">1</button>
-        </div>
+<!-- Button 1 for XOR gate -->
+<div class="button-container">
+                <button id="xorButton1" class="button" onclick="toggleButton('xor', 1)">1</button>
+            </div>
 
 <!-- Button 2 for XOR gate -->
 <div class="button-container">
-            <button id="xorButton2" class="button" onclick="toggleButton('xor', 2)">0</button>
-        </div>
+                <button id="xorButton2" class="button" onclick="toggleButton('xor', 2)">0</button>
+            </div>
 
-<!-- SVG representation of XOR gate -->
-<svg width="150" height="70">
-            <text x="35" y="60" font-size="12" fill="white">XOR</text>
-            <circle id="xorGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
-        </svg>
+ <!-- SVG representation of XOR gate -->
+ <svg width="150" height="70">
+                <text x="35" y="60" font-size="12" fill="white">XOR</text>
+                <circle id="xorGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2"/>
+            </svg>
 
 <!-- Output icon for XOR gate -->
 <div class="button-container">
-            <i id="xorOutputIcon" class="fas fa-lightbulb output-icon xor-bulb"></i>
+                <i id="xorOutputIcon" class="fas fa-lightbulb output-icon xor-bulb"></i>
+            </div>
+        </div>
+<!-- Christmas Tree -->
+<div id="christmasTree" class="tree-container" style="display: none;">
+            <!-- Brown rectangle for the tree trunk -->
+            <div style="background-color: brown; width: 40px; height: 60px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);"></div>
+            
+<!-- Tree layers -->
+<div style="background-color: green; width: 20px; height: 30px; position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);"></div>
+            <div style="background-color: green; width: 30px; height: 30px; position: absolute; bottom: 90px; left: 50%; transform: translateX(-50%);"></div>
+            <div style="background-color: green; width: 40px; height: 30px; position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%);"></div>
+            
+<!-- Circles on the tree -->
+<div id="circle1" class="circle" style="position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%);"></div>
+            <div id="circle2" class="circle" style="position: absolute; bottom: 90px; left: 50%; transform: translateX(-50%);"></div>
+            <div id="circle3" class="circle" style="position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%);"></div>
+            <div id="circle4" class="circle" style="position: absolute; bottom: 150px; left: 50%; transform: translateX(-50%);"></div>
         </div>
     </div>
-</div>
 
+    <!-- JavaScript script for gate functionality -->
 <!-- JavaScript script for gate functionality -->
 <script>
-    // Initial states of the buttons for each gate
-    let andButtonStates = [0, 0];
-    let orButtonStates = [0, 0];
-    let norButtonStates = [0, 0];
-    let xorButtonStates = [0, 0];
+// Initial states of the buttons for each gate
+let andButtonStates = [1, 0];  // Initial states set to 1 (ON) and 0 (OFF)
+let orButtonStates = [1, 0];   // Initial states set to 1 (ON) and 0 (OFF)
+let norButtonStates = [1, 0];  // Initial states set to 1 (ON) and 0 (OFF)
+let xorButtonStates = [1, 0];  // Initial states set to 1 (ON) and 0 (OFF)
 
-    // Function to toggle the state of a button for a specific gate
-    function toggleButton(gateType, buttonNumber) {
-        if (gateType === 'and') {
-            andButtonStates[buttonNumber - 1] = 1 - andButtonStates[buttonNumber - 1];
-            document.getElementById(`andButton${buttonNumber}`).innerText = andButtonStates[buttonNumber - 1];
-            updateAndOutput();
-        } else if (gateType === 'or') {
-            orButtonStates[buttonNumber - 1] = 1 - orButtonStates[buttonNumber - 1];
-            document.getElementById(`orButton${buttonNumber}`).innerText = orButtonStates[buttonNumber - 1];
-            updateOrOutput();
-        } else if (gateType === 'nor') {
-            norButtonStates[buttonNumber - 1] = 1 - norButtonStates[buttonNumber - 1];
-            document.getElementById(`norButton${buttonNumber}`).innerText = norButtonStates[buttonNumber - 1];
-            updateNorOutput();
-        } else if (gateType === 'xor') {
-            xorButtonStates[buttonNumber - 1] = 1 - xorButtonStates[buttonNumber - 1];
-            document.getElementById(`xorButton${buttonNumber}`).innerText = xorButtonStates[buttonNumber - 1];
-            updateXorOutput();
-        }
+// Function to display the Christmas tree
+function displayChristmasTree() {
+    const christmasTree = document.getElementById('christmasTree');
+    christmasTree.style.display = 'block';
+
+    // Add animation or any other effects for the tree appearance if needed
+}
+
+// Function to hide the Christmas tree
+function hideChristmasTree() {
+    const christmasTree = document.getElementById('christmasTree');
+    christmasTree.style.display = 'none';
+
+    // Add animation or any other effects for the tree disappearance if needed
+}
+
+// Function to toggle the state of a button for a specific gate
+function toggleButton(gateType, buttonNumber) {
+    if (gateType === 'and') {
+        andButtonStates[buttonNumber - 1] = 1 - andButtonStates[buttonNumber - 1];
+        document.getElementById(`andButton${buttonNumber}`).innerText = andButtonStates[buttonNumber - 1];
+    } else if (gateType === 'or') {
+        orButtonStates[buttonNumber - 1] = 1 - orButtonStates[buttonNumber - 1];
+        document.getElementById(`orButton${buttonNumber}`).innerText = orButtonStates[buttonNumber - 1];
+    } else if (gateType === 'nor') {
+        norButtonStates[buttonNumber - 1] = 1 - norButtonStates[buttonNumber - 1];
+        document.getElementById(`norButton${buttonNumber}`).innerText = norButtonStates[buttonNumber - 1];
+    } else if (gateType === 'xor') {
+        xorButtonStates[buttonNumber - 1] = 1 - xorButtonStates[buttonNumber - 1];
+        document.getElementById(`xorButton${buttonNumber}`).innerText = xorButtonStates[buttonNumber - 1];
     }
 
-    // Function to update the output for the AND gate
-    function updateAndOutput() {
-        const andResult = andButtonStates[0] & andButtonStates[1]; // AND logic gate
-        const andOutputIcon = document.getElementById('andOutputIcon');
-        const andGateOutput = document.getElementById('andGateOutput');
+    // Update lightbulbs
+    updateAndOutput();
+    updateOrOutput();
+    updateNorOutput();
+    updateXorOutput();
 
-        if (andResult === 1) {
-            andOutputIcon.style.color = 'red';
-            andGateOutput.setAttribute('fill', 'red');
-        } else {
-            andOutputIcon.style.color = '#ccc';
-            andGateOutput.setAttribute('fill', 'white');
+    // Check if any lightbulbs are turned off
+    if (andButtonStates.some(state => state === 0) ||
+        orButtonStates.some(state => state === 0) ||
+        norButtonStates.some(state => state === 0) ||
+        xorButtonStates.some(state => state === 0)) {
+        hideChristmasTree();
+    } else {
+        // Check if all lightbulbs are turned on
+        if (andButtonStates.every(state => state === 1) &&
+            orButtonStates.every(state => state === 1) &&
+            norButtonStates.every(state => state === 1) &&
+            xorButtonStates.every(state => state === 1)) {
+            console.log('All lightbulbs are ON');
+            displayChristmasTree();
         }
     }
+}
 
-    // Function to update the output for the OR gate
-    function updateOrOutput() {
-        const orResult = orButtonStates[0] | orButtonStates[1]; // OR logic gate
-        const orOutputIcon = document.getElementById('orOutputIcon');
-        const orGateOutput = document.getElementById('orGateOutput');
 
-        if (orResult === 1) {
-            orOutputIcon.style.color = 'orange';
-            orGateOutput.setAttribute('fill', 'orange');
-        } else {
-            orOutputIcon.style.color = '#ccc';
-            orGateOutput.setAttribute('fill', 'white');
-        }
+
+// Function to update the output for the AND gate
+function updateAndOutput() {
+    const andResult = andButtonStates[0] & andButtonStates[1]; // AND logic gate
+    const andOutputIcon = document.getElementById('andOutputIcon');
+    const andGateOutput = document.getElementById('andGateOutput');
+
+    if (andResult === 1) {
+        andOutputIcon.style.color = 'red';
+        andGateOutput.setAttribute('fill', 'red');
+    } else {
+        andOutputIcon.style.color = '#ccc';
+        andGateOutput.setAttribute('fill', 'white');
     }
+}
 
-    // Function to update the output for the NOR gate
-    function updateNorOutput() {
-        const norResult = !(norButtonStates[0] | norButtonStates[1]); // NOR logic gate
-        const norOutputIcon = document.getElementById('norOutputIcon');
-        const norGateOutput = document.getElementById('norGateOutput');
+// Function to update the output for the OR gate
+function updateOrOutput() {
+    const orResult = orButtonStates[0] | orButtonStates[1]; // OR logic gate
+    const orOutputIcon = document.getElementById('orOutputIcon');
+    const orGateOutput = document.getElementById('orGateOutput');
 
-        if (norResult) {
-            norOutputIcon.style.color = 'blue';
-            norGateOutput.setAttribute('fill', 'blue');
-        } else {
-            norOutputIcon.style.color = '#ccc';
-            norGateOutput.setAttribute('fill', 'white');
-        }
+    if (orResult === 1) {
+        orOutputIcon.style.color = 'orange';
+        orGateOutput.setAttribute('fill', 'orange');
+    } else {
+        orOutputIcon.style.color = '#ccc';
+        orGateOutput.setAttribute('fill', 'white');
     }
+}
 
-    // Function to update the output for the XOR gate
-    function updateXorOutput() {
-        const xorResult = xorButtonStates[0] ^ xorButtonStates[1]; // XOR logic gate
-        const xorOutputIcon = document.getElementById('xorOutputIcon');
-        const xorGateOutput = document.getElementById('xorGateOutput');
+// Function to update the output for the NOR gate
+function updateNorOutput() {
+    const norResult = !(norButtonStates[0] | norButtonStates[1]); // NOR logic gate
+    const norOutputIcon = document.getElementById('norOutputIcon');
+    const norGateOutput = document.getElementById('norGateOutput');
 
-        if (xorResult) {
-            xorOutputIcon.style.color = 'green';
-            xorGateOutput.setAttribute('fill', 'green');
-        } else {
-            xorOutputIcon.style.color = '#ccc';
-            xorGateOutput.setAttribute('fill', 'white');
-        }
+    if (norResult) {
+        norOutputIcon.style.color = 'blue';
+        norGateOutput.setAttribute('fill', 'blue');
+    } else {
+        norOutputIcon.style.color = '#ccc';
+        norGateOutput.setAttribute('fill', 'white');
     }
+}
+
+// Function to update the output for the XOR gate
+function updateXorOutput() {
+    const xorResult = xorButtonStates[0] ^ xorButtonStates[1]; // XOR logic gate
+    const xorOutputIcon = document.getElementById('xorOutputIcon');
+    const xorGateOutput = document.getElementById('xorGateOutput');
+
+    if (xorResult) {
+        xorOutputIcon.style.color = 'green';
+        xorGateOutput.setAttribute('fill', 'green');
+    } else {
+        xorOutputIcon.style.color = '#ccc';
+        xorGateOutput.setAttribute('fill', 'white');
+    }
+}
+
 </script>
-
 </body>
 </html>
