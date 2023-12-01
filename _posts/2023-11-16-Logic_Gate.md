@@ -1,10 +1,11 @@
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<style>
         /* Global styles for the body */
         body {
             font-family: Arial, sans-serif;
@@ -93,26 +94,55 @@
             top: 100px;
             left: -15px;
         }
+        </style>
+ <style>       
+/* Dot styles */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 
-        /* Dot styles */
-        .dot {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
+/* Dots for the Green Triangle */
+#dotGreen1 {
+    position: absolute;
+    top: 630px;
+    left: 670px;
+    background-color: #CFD3CF;
+}
+
+#dotGreen2 {
+    position: absolute;
+    top: 660px;
+    left: 680px;
+    background-color: #CFD3CF;
+}
+
+#dotGreen3 {
+    position: absolute;
+    top: 710px;
+    left: 700px;
+    background-color: #CFD3CF;
+}
+
+#dotGreen4 {
+    position: absolute;
+    top: 700px;
+    left: 700px;
+    background-color: #CFD3CF;
+}
+
+</style>
 
     </style>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-Bw+irXzAGYTW3oIUcI+5B3c5AcXKXtwJU6dRfkaOTpAupzWC8FX6C9AjbV8AGj8G/oPfOj0lg/9hbo+KwIzA4A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-    <!-- Main content container -->
+<!-- Main content container -->
     <div class="container">
         <!-- AND Gate -->
         <div class="gate-container">
@@ -140,8 +170,8 @@
             <div class="dot" id="dotAnd" style="top: 70px; left: 25px;" onclick="changeDotColor('dotAnd')"></div>
         </div>
 
-        <!-- OR Gate -->
-        <div class="gate-container">
+<!-- OR Gate -->
+<div class="gate-container">
             <!-- Button 1 for OR gate -->
             <div class="button-container">
                 <button id="orButton1" class="button" onclick="toggleButton('or', 1)">1</button>
@@ -166,8 +196,8 @@
             <div class="dot" id="dotOr" style="top: 70px; left: 95px;" onclick="changeDotColor('dotOr')"></div>
         </div>
 
-        <!-- NOR Gate -->
-        <div class="gate-container">
+ <!-- NOR Gate -->
+<div class="gate-container">
             <!-- Button 1 for NOR gate -->
             <div class="button-container">
                 <button id="norButton1" class="button" onclick="toggleButton('nor', 1)">1</button>
@@ -189,8 +219,8 @@
             <div class="dot" id="dotNor" style="top: 0; left: 30px;" onclick="changeDotColor('dotNor')"></div>
         </div>
 
-        <!-- XOR Gate -->
-        <div class="gate-container">
+<!-- XOR Gate -->
+<div class="gate-container">
             <!-- Button 1 for XOR gate -->
             <div class="button-container">
                 <button id="xorButton1" class="button" onclick="toggleButton('xor', 1)">1</button>
@@ -214,13 +244,13 @@
 
         
 
-        <!-- Tree -->
-        <div class="tree">
+ <!-- Tree -->
+<div class="tree">
             <div class="trunk"></div>
         </div>
     </div>
 
-    <script>
+ <script>
     // Initial states of the buttons for each gate
     let andButtonStates = [0, 0];
     let orButtonStates = [0, 0];
@@ -340,7 +370,7 @@
     <!-- Dot 2 for the Green Triangle -->
     <div class="dot" id="dotGreen2" style="top: 610px; left: 685px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen2')"></div>
     <!-- Dot 3 for the Green Triangle -->
-    <div class="dot" id="dotGreen3" style="top: 640px; left: 695px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
+    <div class="dot" id="dotGreen3" style="top: 640x; left: 695px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
     <!-- Dot 4 for the Green Triangle -->
     <div class="dot" id="dotGreen4" style="top: 650px; left: 645px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
 </div>
