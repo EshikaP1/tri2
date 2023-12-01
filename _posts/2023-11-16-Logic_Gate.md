@@ -135,7 +135,7 @@
 
 </style>
 
-    </style>
+    
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-Bw+irXzAGYTW3oIUcI+5B3c5AcXKXtwJU6dRfkaOTpAupzWC8FX6C9AjbV8AGj8G/oPfOj0lg/9hbo+KwIzA4A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -366,13 +366,13 @@
 <!-- Dots for the Green Triangle -->
 <div class="gate-container">
     <!-- Dot 1 for the Green Triangle -->
-    <div class="dot" id="dotGreen1" style="top: 580px; left: 675px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen1')"></div>
+    <div class="dot" id="dotGreen1" style="top: 600px; left: 670px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen1')"></div>
     <!-- Dot 2 for the Green Triangle -->
-    <div class="dot" id="dotGreen2" style="top: 610px; left: 685px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen2')"></div>
+    <div class="dot" id="dotGreen2" style="top: 620px; left: 675px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen2')"></div>
     <!-- Dot 3 for the Green Triangle -->
-    <div class="dot" id="dotGreen3" style="top: 640x; left: 695px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
+    <div class="dot" id="dotGreen3" style="top: 630x; left: 695px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
     <!-- Dot 4 for the Green Triangle -->
-    <div class="dot" id="dotGreen4" style="top: 650px; left: 645px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
+    <div class="dot" id="dotGreen4" style="top: 645px; left: 645px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
 </div>
 <!-- Existing JavaScript code above -->
 
