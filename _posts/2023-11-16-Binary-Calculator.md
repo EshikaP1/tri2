@@ -13,7 +13,7 @@ courses: { csp: {week: 13} }
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decimal to Binary Calculator</title>
+    <title>Binary Calculator</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,9 +40,9 @@ courses: { csp: {week: 13} }
 </head>
 <body>
 
-<h1>Decimal to Binary Calculator</h1>
+<h1>Binary Calculator</h1>
 
-<form id="decimalToBinaryCalculator">
+<form id="BinaryCalculator">
     <label for="num1">Decimal Number 1:</label>
     <input type="text" id="num1" placeholder="Enter decimal number">
     <br>
