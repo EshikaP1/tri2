@@ -1,10 +1,20 @@
+---
+toc: true
+comments: false
+layout: post
+title: Logic Gate Project
+description: N/A
+type: ccc
+courses: { csp: {week: 13} }
+---
+
 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--scales the display to the width of the computer-->
 <style>
         /* Global styles for the body */
         body {
@@ -12,8 +22,7 @@
             text-align: center;
             margin: 50px;
         }
-
-        /* Container styling for layout */
+/* Container styling for layout */
         .container {
             display: flex;
             align-items: center;
@@ -366,14 +375,47 @@
 <!-- Dots for the Green Triangle -->
 <div class="gate-container">
     <!-- Dot 1 for the Green Triangle -->
-    <div class="dot" id="dotGreen1" style="top: 600px; left: 670px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen1')"></div>
+    <div class="dot" id="dotGreen1" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen1')"></div>
     <!-- Dot 2 for the Green Triangle -->
-    <div class="dot" id="dotGreen2" style="top: 620px; left: 675px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen2')"></div>
+    <div class="dot" id="dotGreen2" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen2')"></div>
     <!-- Dot 3 for the Green Triangle -->
-    <div class="dot" id="dotGreen3" style="top: 630x; left: 695px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
+    <div class="dot" id="dotGreen3" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
     <!-- Dot 4 for the Green Triangle -->
-    <div class="dot" id="dotGreen4" style="top: 645px; left: 645px; background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
+    <div class="dot" id="dotGreen4" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
 </div>
+
+<style>
+    /* Dot styles for the Green Triangle */
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    /* Dots for the Green Triangle */
+    #dotGreen1 {
+        top: 600px;
+        left: 670px;
+    }
+
+    #dotGreen2 {
+        top: 620px;
+        left: 675px;
+    }
+
+    #dotGreen3 {
+        top: 630px;
+        left: 695px;
+    }
+
+    #dotGreen4 {
+        top: 645px;
+        left: 645px;
+    }
+</style>
+
 <!-- Existing JavaScript code above -->
 
 <script>

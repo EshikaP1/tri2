@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: Logic Gate plaan 
+title: Logic Gate Plan 
 description: N/A
 type: ccc
 courses: { csp: {week: 13} }
