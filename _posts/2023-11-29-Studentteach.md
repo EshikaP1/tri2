@@ -41,4 +41,4 @@ courses: { csp: {week: 13} }
         note: we can add exactly what the consequences are, like if it's a fine, fine is $250,000
 ,
 
-![Commit](image.png)
+![Commit](https://teaching.resources.osu.edu/sites/default/files/styles/max_3840x3840/public/2022-12/CreativeCommonsGraphic.jpg?itok=LmaLpQYa)
