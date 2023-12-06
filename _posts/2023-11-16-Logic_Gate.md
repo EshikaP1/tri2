@@ -16,6 +16,7 @@ courses: { csp: {week: 13} }
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--scales the display to the width of the computer-->
 <style>
+    
         /* Global styles for the body */
         body {
             font-family: Arial, sans-serif;
@@ -153,7 +154,8 @@ courses: { csp: {week: 13} }
 <body>
 <!-- Main content container -->
     <div class="container">
-        <!-- AND Gate -->
+   
+<!-- AND Gate -->
         <div class="gate-container">
             <!-- Button 1 for AND gate -->
             <div class="button-container">
@@ -252,6 +254,102 @@ courses: { csp: {week: 13} }
         </div>
 
         
+<!-- Main content container -->
+<div class="container">
+    <!-- AND Gate -->
+    <div class="gate-container">
+        <!-- Button 1 for AND gate -->
+    </div>
+
+    <!-- OR Gate -->
+    <div class="gate-container">
+        <!-- Button 1 for OR gate -->
+    </div>
+
+    <!-- NOR Gate -->
+    <div class="gate-container">
+        <!-- Button 1 for NOR gate -->
+    </div>
+
+<!-- XOR Gate -->
+   <div class="gate-container">
+        <!-- Button 1 for XOR gate -->
+    </div>
+
+
+</div>
+
+<!-- Dots for the Green Triangle -->
+<div class="gate-container">
+    <!-- Dot 1 for the Green Triangle -->
+   
+</div>
+
+
+<script>
+    // Function to update the color of a dot based on gate result
+    function updateDotColor(gateResult, dotId) {
+        const dot = document.getElementById(dotId);
+
+        // Change the color of the dot based on the gate result
+        switch (dotId) 
+        }
+    }
+
+    // Function to update the dots for the Green Triangle based on AND gate result
+    function updateGreenDots() {
+        const andResult = andButtonStates[0] & andButtonStates[1]; // AND logic gate
+        updateDotColor(andResult, 'dotGreen1');
+        updateDotColor(andResult, 'dotGreen2');
+        updateDotColor(andResult, 'dotGreen3');
+        updateDotColor(andResult, 'dotGreen4');
+    }
+
+    // Function to update the dots for other gates based on their results
+    function updateOtherDots() 
+
+    // Function to toggle the state of a button for a gate and update the dots
+    function toggleButtonAndUpdateDots(gateType, buttonNumber) {
+        toggleButton(gateType, buttonNumber);
+        switch (gateType) 
+    }
+
+    // Event listeners for AND gate buttons
+    document.getElementById('andButton1').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('and', 1);
+    });
+
+    document.getElementById('andButton2').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('and', 2);
+    });
+
+    // Event listeners for OR gate buttons
+    document.getElementById('orButton1').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('or', 1);
+    });
+
+    document.getElementById('orButton2').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('or', 2);
+    });
+
+    // Event listeners for NOR gate buttons
+    document.getElementById('norButton1').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('nor', 1);
+    });
+
+    document.getElementById('norButton2').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('nor', 2);
+    });
+
+    // Event listeners for XOR gate buttons
+    document.getElementById('xorButton1').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('xor', 1);
+    });
+
+    document.getElementById('xorButton2').addEventListener('click', function () {
+        toggleButtonAndUpdateDots('xor', 2);
+    });
+</script>
 
  <!-- Tree -->
 <div class="tree">
@@ -382,6 +480,7 @@ courses: { csp: {week: 13} }
     <div class="dot" id="dotGreen3" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen3')"></div>
     <!-- Dot 4 for the Green Triangle -->
     <div class="dot" id="dotGreen4" style="background-color: #CFD3CF;" onclick="changeDotColor('dotGreen4')"></div>
+    
 </div>
 
 <style>
@@ -391,61 +490,81 @@ courses: { csp: {week: 13} }
         height: 10px;
         border-radius: 50%;
         cursor: pointer;
-        position: absolute;
+        position: relative;
     }
 
     /* Dots for the Green Triangle */
     #dotGreen1 {
-        top: 600px;
-        left: 670px;
+        top: 700px;
+        left: 680px;
     }
 
     #dotGreen2 {
-        top: 620px;
-        left: 675px;
+        top: 650px;
+        left: 670px;
     }
 
     #dotGreen3 {
-        top: 630px;
+        top: 732px;
         left: 695px;
     }
 
     #dotGreen4 {
-        top: 645px;
+        top: 705px;
         left: 645px;
     }
 </style>
 
-<!-- Existing JavaScript code above -->
 
 <script>
     // Function to update the color of a dot based on gate result
-    function updateDotColor(gateResult, dotId) {
-        const dot = document.getElementById(dotId);
+  // Function to update the color of a dot based on gate result and coordinates
+function updateDot(gateResult, dotId, coordinates) {
+    const dot = document.getElementById(dotId);
 
-        // Change the color of the dot based on the gate result
-        switch (dotId) {
-            case 'dotAnd':
-                dot.style.backgroundColor = gateResult === 1 ? 'red' : '#ccc';
-                break;
-            case 'dotOr':
-                dot.style.backgroundColor = gateResult === 1 ? 'orange' : '#ccc';
-                break;
-            case 'dotNor':
-                dot.style.backgroundColor = gateResult === 1 ? 'blue' : '#ccc';
-                break;
-            case 'dotXor':
-                dot.style.backgroundColor = gateResult === 1 ? 'green' : '#ccc';
-                break;
-            case 'dotGreen1':
-            case 'dotGreen2':
-            case 'dotGreen3':
-            case 'dotGreen4':
-                dot.style.backgroundColor = gateResult === 1 ? 'red' : '#ccc';
-                break;
-            // Add more cases for other dots if needed
-        }
+    // Change the color of the dot based on the gate result
+    switch (dotId) {
+        case 'dotAnd':
+            dot.style.backgroundColor = gateResult === 1 ? 'red' : '#ccc';
+            break;
+        case 'dotOr':
+            dot.style.backgroundColor = gateResult === 1 ? 'orange' : '#ccc';
+            break;
+        case 'dotNor':
+            dot.style.backgroundColor = gateResult === 1 ? 'blue' : '#ccc';
+            break;
+        case 'dotXor':
+            dot.style.backgroundColor = gateResult === 1 ? 'green' : '#ccc';
+            break;
+        case 'dotGreen1':
+            dot.style.backgroundColor = gateResult === 1 ? 'red' : '#ccc';
+            break;
+        case 'dotGreen2':
+            dot.style.backgroundColor = gateResult === 1 ? 'yellow' : '#ccc';
+            break;
+        case 'dotGreen3':
+            dot.style.backgroundColor = gateResult === 1 ? 'blue' : '#ccc';
+            break;
+        case 'dotGreen4':
+            dot.style.backgroundColor = gateResult === 1 ? 'green' : '#ccc';
+            break;
+        // Add more cases for other dots if needed
     }
+
+    // Update the position of the dot based on coordinates
+    dot.style.top = `${coordinates.top}px`;
+    dot.style.left = `${coordinates.left}px`;
+}
+
+// Example usage:
+// Call this function whenever you want to update the color and position of a dot
+const dotCoordinates = {
+    top: 100,
+    left: 200,
+};
+
+updateDot(1, 'dotAnd', dotCoordinates);
+
 
     // Function to update the dots for the Green Triangle based on AND gate result
     function updateGreenDots() {
@@ -521,9 +640,6 @@ courses: { csp: {week: 13} }
         toggleButtonAndUpdateDots('xor', 2);
     });
 </script>
-
-<!-- Existing JavaScript code below -->
-<!-- Existing JavaScript code above -->
 
 <script>
     // Map each dot to its corresponding gate and color
@@ -638,8 +754,8 @@ courses: { csp: {week: 13} }
     });
 </script>
 
-<!-- Existing JavaScript code below -->
 
 </body>
+
 
 </html>
