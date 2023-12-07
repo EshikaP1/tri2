@@ -12,6 +12,7 @@ courses: { csp: {week: 13} }
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--scales the code to the dimensions of the computer-->
     <style>
         /* Global styles for the body */
         body {
@@ -19,70 +20,58 @@ courses: { csp: {week: 13} }
             text-align: center;
             margin: 50px;
         }
-
-        /* Container styling for layout */
+/* Container styling for layout */
         .container {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
         }
-
-        /* Styling for each gate container */
+/* Styling for each gate container */
         .gate-container {
             display: flex;
             align-items: center;
         }
-
-        /* Styling for button containers */
+/* Styling for button containers */
         .button-container {
             margin: 10px;
         }
-
-        /* Styling for buttons */
+/* Styling for buttons */
         .button {
             padding: 10px 20px;
             font-size: 16px;
         }
-
-        /* Styling for SVG elements */
+/* Styling for SVG elements */
         svg {
             margin: 0 20px;
         }
-
-        /* Styling for output icons */
+/* Styling for output icons */
         .output-icon {
             font-size: 30px;
         }
-
-        /* Styling for AND gate bulb */
+/* Styling for AND gate bulb */
         .and-bulb {
             color: red;
         }
-
-        /* Styling for OR gate bulb */
+/* Styling for OR gate bulb */
         .or-bulb {
             color: orange;
         }
-
-        /* Styling for NOR gate bulb */
+/* Styling for NOR gate bulb */
         .nor-bulb {
             color: blue;
         }
-
-        /* Styling for XOR gate bulb */
+/* Styling for XOR gate bulb */
         .xor-bulb {
             color: green;
         }
-
-        /* Styling for gate labels */
+/* Styling for gate labels */
         .gate-label {
             font-size: 18px;
             margin-right: 10px;
             fill: white; /* Change text color to white */
         }
-
-        /* Tree styles */
+/* Tree styles */
 .tree {
     position: relative;
     width: 0;
@@ -91,10 +80,9 @@ courses: { csp: {week: 13} }
     border-right: 50px solid transparent;
     border-bottom: 100px solid green;
     margin-top: 5% ;
+    /* tried using relative spacing, making the tree a certain perentage from the top of the screen */
 }
-
-
-        .trunk {
+.trunk {
             position: relative;
             width: 27px;
             height: 40px;
@@ -102,8 +90,7 @@ courses: { csp: {week: 13} }
             top: 100px;
             left: -15px;
         }
-
-        /* Styling for dots */
+/* Styling for dots */
 .dot {
     width: 10px;
     height: 10px;
@@ -124,6 +111,7 @@ courses: { csp: {week: 13} }
             <!-- Button 1 for AND gate -->
             <div class="button-container">
                 <button id="andButton1" class="button" onclick="toggleButton('and', 1)">1</button>
+                <!--andButton1 provides a unique identifier for this button that helps connect it to other funcitons, like the dots and the color changing icons-->
             </div>
             <!-- Button 2 for AND gate -->
             <div class="button-container">
@@ -146,7 +134,7 @@ courses: { csp: {week: 13} }
         </div>
 
         <!-- OR Gate -->
-        <div class="gate-container">
+<div class="gate-container">
             <!-- Button 1 for OR gate -->
             <div class="button-container">
                 <button id="orButton1" class="button" onclick="toggleButton('or', 1)">1</button>
@@ -171,8 +159,8 @@ courses: { csp: {week: 13} }
             <div class="dot" id="dotOr" style="top: 70px; left: 95px;" onclick="changeDotColor('dotOr')"></div>
         </div>
 
-        <!-- NOR Gate -->
-        <div class="gate-container">
+<!-- NOR Gate -->
+<div class="gate-container">
             <!-- Button 1 for NOR gate -->
             <div class="button-container">
                 <button id="norButton1" class="button" onclick="toggleButton('nor', 1)">1</button>
@@ -195,7 +183,7 @@ courses: { csp: {week: 13} }
         </div>
 
         <!-- XOR Gate -->
-        <div class="gate-container">
+<div class="gate-container">
             <!-- Button 1 for XOR gate -->
             <div class="button-container">
                 <button id="xorButton1" class="button" onclick="toggleButton('xor', 1)">1</button>
@@ -218,25 +206,24 @@ courses: { csp: {week: 13} }
         </div>
 
         <!-- Tree -->
-        <div class="tree">
+<div class="tree">
             <div class="trunk"></div>
         </div>
     </div>
 
-    <!-- Font Awesome (icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    <!-- Font Awesome (icons) (the lights) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha384-9a2a2PZMZJ4fuXRiK7ujL3IOIRcm6SjFayZBS1G3uMMLr5Z/2q5U1dd2Yiz5Mlks"
         crossorigin="anonymous">
 
     <!-- JavaScript for gate logic -->
-    <script>
+<script>
         // Gate state variables
-        let andGateState = [false, false];
-        let orGateState = [false, false];
-        let norGateState = [false, false];
-        let xorGateState = [false, false];
+        let andGateState = [true, false];
+        let orGateState = [true, false];
+        let norGateState = [true, false];
+        let xorGateState = [true, false];
 
-        // Toggle button state and update gate logic
         // Toggle button state and update gate logic
 function toggleButton(gate, button) {
     const index = button - 1; // Adjust index
@@ -298,13 +285,6 @@ function toggleButton(gate, button) {
             document.getElementById('dotXor').style.backgroundColor = output ? 'darkgreen' : 'white';
         }
 
-        // Change color of the dot
-        function changeDotColor(dotId) {
-            const dot = document.getElementById(dotId);
-            const currentColor = dot.style.backgroundColor;
-            const newColor = currentColor === 'red' ? 'white' : 'red';
-            dot.style.backgroundColor = newColor;
-        }
 
 // Function to calculate dot positions relative to the top of the page
 function calculateDotPositions() {
@@ -323,16 +303,13 @@ document.getElementById('dotAnd').style.top = `${dotAND}px`;
 document.getElementById('dotNor').style.top = `${dotNOR}px`;
 document.getElementById('dotXor').style.top = `${dotXOR}px`;
 
-const leftPercentageOR = 4.9; // Example: 30% from the left
-const leftPercentageAND = 5.5; // Example: 45% from the left
-const leftPercentageNOR = 3.4; // Example: 60% from the left
-const leftPercentageXOR = 5; // Example: 75% from the left
+//
 
-    // Set positions for each dot horizontally (50% from the left)
-document.getElementById('dotOr').style.left = `${pageLeft + leftPercentageOR}%`;
-document.getElementById('dotAnd').style.left = `${pageLeft + leftPercentageAND}%`;
-document.getElementById('dotNor').style.left = `${pageLeft + leftPercentageNOR}%`;
-document.getElementById('dotXor').style.left = `${pageLeft + leftPercentageXOR}%`;
+    // Set positions for each dot horizontally 
+document.getElementById('dotOr').style.left = `${pageLeft + 4.9}%`;
+document.getElementById('dotAnd').style.left = `${pageLeft + 5.5}%`;
+document.getElementById('dotNor').style.left = `${pageLeft + 3.4}%`;
+document.getElementById('dotXor').style.left = `${pageLeft + 5}%`;
 }
 
 // Calculate positions when the page loads
