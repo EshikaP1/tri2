@@ -288,14 +288,14 @@ function toggleButton(gate, button) {
 
 // Function to calculate dot positions relative to the top of the page
 function calculateDotPositions() {
+    const containerWidth = document.querySelector('.container').offsetWidth; // Get the width of the container
     const containerHeight = document.querySelector('.container').offsetHeight; // Get the height of the container
-    const pageLeft = window.innerWidth * 0.0328;
 
     // Calculate positions for each dot
     const dotOR = containerHeight * 1.56; // Top of the container
-    const dotAND = containerHeight * 1.77; // 7% down from the top of the container
-    const dotNOR = containerHeight * 1.73; // 10% down from the top of the container
-    const dotXOR = containerHeight * 1.65; // 15% down from the top of the container
+    const dotAND = containerWidth * 0.85; // 5% from the left of the container
+    const dotNOR = containerWidth * 0.79; // 10% from the left of the container
+    const dotXOR = containerWidth * 0.83; // 15% from the left of the container
 
     // Set positions for each dot
     document.getElementById('dotOr').style.top = `${dotOR}px`;
@@ -303,11 +303,12 @@ function calculateDotPositions() {
     document.getElementById('dotNor').style.top = `${dotNOR}px`;
     document.getElementById('dotXor').style.top = `${dotXOR}px`;
 
-    // Set positions for each dot horizontally 
-    document.getElementById('dotOr').style.left = `${pageLeft + 4.9}%`;
-    document.getElementById('dotAnd').style.left = `${pageLeft + 5.5}%`;
-    document.getElementById('dotNor').style.left = `${pageLeft + 3.4}%`;
-    document.getElementById('dotXor').style.left = `${pageLeft + 5}%`;
+    // Set positions for each dot horizontally
+    document.getElementById('dotOr').style.left = `${containerWidth * 0.0565}%`; // Adjusted for consistency
+    document.getElementById('dotAnd').style.left = `${containerWidth * 0.055}%`;
+    document.getElementById('dotNor').style.left = `${containerWidth * 0.057}%`; // Adjusted for consistency
+    document.getElementById('dotXor').style.left = `${containerWidth * 0.0586}%`;
+
 }
 
 // Calculate positions when the page loads
