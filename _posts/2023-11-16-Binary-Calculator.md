@@ -113,7 +113,133 @@ courses: { csp: {week: 13} }
             activeInput.value += number;
         }
     }
+
+    
 </script>
 
+<style>
+        /* Updated CSS Styles to make the calculator pink */
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f7e6e6; /* Light pink background color */
+        }
+
+        input {
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+            background-color: #ffe3e3; /* Light pink input background color */
+            border: 1px solid #ffcccc; /* Light pink border color */
+        }
+
+        button {
+            padding: 8px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #ffcccc; /* Pink button background color */
+            border: none;
+            color: #fff; /* Text color for buttons */
+        }
+
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #ff4d6b; /* Pink color for heading text */
+        }
+    </style>
+
+    <script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
+
+<script>
+// setup vanta scripts as functions
+var vantaInstances = {
+  halo: VANTA.HALO,
+  birds: VANTA.BIRDS,
+  net: VANTA.NET,
+  rings: VANTA.RINGS
+};
+
+// obtain a random vanta function
+var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
+
+// run the animation
+vantaInstance({
+  el: "#animation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false
+});
+
+
+// Variables
+$primary-color: #ff6b6b; // Pink color
+$secondary-color: #fff; // White color
+$button-bg-color: #ffb8b8; // Light pink for button background
+$button-hover-color: #ff9999; // Lighter pink for button hover effect
+
+// Calculator container
+.calculator {
+  background-color: $secondary-color;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  // Calculator display
+  .display {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  // Calculator buttons
+  .buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    
+    button {
+      background-color: $button-bg-color;
+      color: $primary-color;
+      padding: 15px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: $button-hover-color;
+      }
+      
+      &.equal {
+        grid-column: span 2;
+      }
+      
+      &.clear {
+        grid-column: span 3;
+      }
+    }
+  }
+}
+</script>
 </body>
 </html>
