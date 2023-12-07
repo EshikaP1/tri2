@@ -2,13 +2,11 @@
 toc: true
 comments: false
 layout: post
-title: Logic Gate Project Cindy
+title: Logic Gates (Final)
 description: N/A
 type: ccc
 courses: { csp: {week: 13} }
 ---
-
-
 <html lang="en">
 
 <head>
@@ -85,15 +83,16 @@ courses: { csp: {week: 13} }
         }
 
         /* Tree styles */
-        .tree {
-            position: relative;
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid green;
-            margin-top: 30px;
-        }
+.tree {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid green;
+    margin-top: 5% ;
+}
+
 
         .trunk {
             position: relative;
@@ -103,6 +102,17 @@ courses: { csp: {week: 13} }
             top: 100px;
             left: -15px;
         }
+
+        /* Styling for dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1; /* Bring dots to the front */
+}
+
     </style>
 </head>
 
@@ -227,27 +237,34 @@ courses: { csp: {week: 13} }
         let xorGateState = [false, false];
 
         // Toggle button state and update gate logic
-        function toggleButton(gate, button) {
-            const index = button - 1; // Adjust index
-            switch (gate) {
-                case 'and':
-                    andGateState[index] = !andGateState[index];
-                    updateAndGate();
-                    break;
-                case 'or':
-                    orGateState[index] = !orGateState[index];
-                    updateOrGate();
-                    break;
-                case 'nor':
-                    norGateState[index] = !norGateState[index];
-                    updateNorGate();
-                    break;
-                case 'xor':
-                    xorGateState[index] = !xorGateState[index];
-                    updateXorGate();
-                    break;
-            }
-        }
+        // Toggle button state and update gate logic
+function toggleButton(gate, button) {
+    const index = button - 1; // Adjust index
+    const buttonElement = document.getElementById(`${gate}Button${button}`);
+    
+    // Toggle button value between 1 and 0
+    buttonElement.textContent = buttonElement.textContent === '1' ? '0' : '1';
+
+    // Update gate logic based on the new button value
+    switch (gate) {
+        case 'and':
+            andGateState[index] = buttonElement.textContent === '1';
+            updateAndGate();
+            break;
+        case 'or':
+            orGateState[index] = buttonElement.textContent === '1';
+            updateOrGate();
+            break;
+        case 'nor':
+            norGateState[index] = buttonElement.textContent === '1';
+            updateNorGate();
+            break;
+        case 'xor':
+            xorGateState[index] = buttonElement.textContent === '1';
+            updateXorGate();
+            break;
+    }
+}
 
         // Update AND gate logic and display
         function updateAndGate() {
@@ -278,7 +295,7 @@ courses: { csp: {week: 13} }
             const output = xorGateState[0] !== xorGateState[1];
             document.getElementById('xorGateOutput').setAttribute('fill', output ? 'green' : 'white');
             document.getElementById('xorOutputIcon').classList.toggle('xor-bulb', output);
-            document.getElementById('dotXor').style.backgroundColor = output ? 'green' : 'white';
+            document.getElementById('dotXor').style.backgroundColor = output ? 'darkgreen' : 'white';
         }
 
         // Change color of the dot
@@ -288,7 +305,41 @@ courses: { csp: {week: 13} }
             const newColor = currentColor === 'red' ? 'white' : 'red';
             dot.style.backgroundColor = newColor;
         }
-    </script>
+
+// Function to calculate dot positions relative to the top of the page
+function calculateDotPositions() {
+    const pageTop = window.innerHeight * 1.08; // 
+    const pageLeft = window.innerWidth * 0.0328; // 
+
+    // Calculate positions for each dot
+const dotOR = pageTop;
+const dotAND = pageTop + (window.innerHeight * 0.07); // 1% down from the top
+const dotNOR = pageTop + (window.innerHeight * 0.10); // 2% down from the top
+const dotXOR = pageTop + (window.innerHeight * 0.15); // 3% down from the top
+
+    // Set positions for each dot
+document.getElementById('dotOr').style.top = `${dotOR}px`;
+document.getElementById('dotAnd').style.top = `${dotAND}px`;
+document.getElementById('dotNor').style.top = `${dotNOR}px`;
+document.getElementById('dotXor').style.top = `${dotXOR}px`;
+
+const leftPercentageOR = 4.9; // Example: 30% from the left
+const leftPercentageAND = 5.5; // Example: 45% from the left
+const leftPercentageNOR = 3.4; // Example: 60% from the left
+const leftPercentageXOR = 5; // Example: 75% from the left
+
+    // Set positions for each dot horizontally (50% from the left)
+document.getElementById('dotOr').style.left = `${pageLeft + leftPercentageOR}%`;
+document.getElementById('dotAnd').style.left = `${pageLeft + leftPercentageAND}%`;
+document.getElementById('dotNor').style.left = `${pageLeft + leftPercentageNOR}%`;
+document.getElementById('dotXor').style.left = `${pageLeft + leftPercentageXOR}%`;
+}
+
+// Calculate positions when the page loads
+window.onload = calculateDotPositions;
+
+</script>
+    
 </body>
 
 </html>
