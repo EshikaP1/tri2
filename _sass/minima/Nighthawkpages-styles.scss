@@ -286,3 +286,35 @@ height: 100%;
   border: none; /* Remove border for a cleaner look */
   cursor: pointer; /* Change cursor to pointer for better user interaction */
 }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input {
+            width: 150px;
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            padding: 8px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .keyboard {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            margin-top: 20px;
+        }
+        .keyboard {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 5px;
+          margin-top: 10px;
+      }
+      .keyboard button {
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+      }

@@ -14,33 +14,16 @@ courses: { csp: {week: 13} }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary Calculator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        input {
-            width: 150px;
-            padding: 5px;
-            margin: 5px;
-        }
-        button {
-            padding: 8px;
-            margin: 5px;
-            cursor: pointer;
-        }
-        .keyboard {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 5px;
-            margin-top: 20px;
-        }
-    </style>
+
+
+
+git pu
+git
 </head>
 <body>
 
 <h1>Binary Calculator</h1>
+
 
 <form id="BinaryCalculator">
     <label for="num1">Decimal Number 1:</label>
@@ -72,26 +55,22 @@ courses: { csp: {week: 13} }
 
 <script>
     function performOperation(operation) {
-        var num1 = document.getElementById("num1").value;
-        var num2 = document.getElementById("num2").value;
+        var num1 = parseInt(document.getElementById("num1").value, 10) || 0;
+        var num2 = parseInt(document.getElementById("num2").value, 10) || 0;
         var resultField = document.getElementById("result");
-
-        // Convert input numbers to binary
-        var binaryNum1 = decimalToBinary(parseInt(num1, 10));
-        var binaryNum2 = decimalToBinary(parseInt(num2, 10));
 
         switch (operation) {
             case 'add':
-                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) + binaryToDecimal(binaryNum2));
+                resultField.value = decimalToBinary(num1 + num2);
                 break;
             case 'subtract':
-                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) - binaryToDecimal(binaryNum2));
+                resultField.value = decimalToBinary(num1 - num2);
                 break;
             case 'multiply':
-                resultField.value = decimalToBinary(binaryToDecimal(binaryNum1) * binaryToDecimal(binaryNum2));
+                resultField.value = decimalToBinary(num1 * num2);
                 break;
             case 'divide':
-                resultField.value = decimalToBinary(Math.floor(binaryToDecimal(binaryNum1) / binaryToDecimal(binaryNum2)));
+                resultField.value = decimalToBinary(Math.floor(num1 / num2));
                 break;
             default:
                 resultField.value = "Invalid operation";
@@ -99,11 +78,7 @@ courses: { csp: {week: 13} }
     }
 
     function decimalToBinary(decimalNum) {
-        return (decimalNum >>> 0).toString(2); // Using ">>> 0" to treat the input as a 32-bit unsigned integer
-    }
-
-    function binaryToDecimal(binaryStr) {
-        return parseInt(binaryStr, 2);
+        return (decimalNum >>> 0).toString(2);
     }
 
     function addToInput(number) {
