@@ -286,3 +286,89 @@ height: 100%;
   border: none; /* Remove border for a cleaner look */
   cursor: pointer; /* Change cursor to pointer for better user interaction */
 }
+
+/* Global styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+}
+/* Container styling for layout */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Styling for each gate container */
+.gate-container {
+  display: flex;
+  align-items: center;
+}
+/* Styling for button containers */
+.button-container {
+  margin: 10px;
+}
+/* Styling for buttons */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+/* Styling for SVG elements */
+svg {
+  margin: 0 20px;
+}
+/* Styling for output icons */
+.output-icon {
+  font-size: 30px;
+}
+/* Styling for AND gate bulb */
+.and-bulb {
+  color: red;
+}
+/* Styling for OR gate bulb */
+.or-bulb {
+  color: orange;
+}
+/* Styling for NOR gate bulb */
+.nor-bulb {
+  color: blue;
+}
+/* Styling for XOR gate bulb */
+.xor-bulb {
+  color: green;
+}
+/* Styling for gate labels */
+.gate-label {
+  font-size: 18px;
+  margin-right: 10px;
+  fill: white; /* Change text color to white */
+}
+/* Tree styles */
+.tree {
+position: relative;
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid green;
+margin-top: 5% ;
+/* tried using relative spacing, making the tree a certain perentage from the top of the screen */
+}
+.trunk {
+  position: relative;
+  width: 27px;
+  height: 40px;
+  background-color: brown;
+  top: 100px;
+  left: -15px;
+}
+/* Styling for dots */
+.dot {
+width: 10px;
+height: 10px;
+background-color: white;
+border-radius: 50%;
+position: absolute;
+z-index: 1; /* Bring dots to the front */
+}

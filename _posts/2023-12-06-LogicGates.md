@@ -14,92 +14,7 @@ courses: { csp: {week: 13} }
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--scales the code to the dimensions of the computer-->
     <style>
-        /* Global styles for the body */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-/* Container styling for layout */
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-/* Styling for each gate container */
-        .gate-container {
-            display: flex;
-            align-items: center;
-        }
-/* Styling for button containers */
-        .button-container {
-            margin: 10px;
-        }
-/* Styling for buttons */
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-/* Styling for SVG elements */
-        svg {
-            margin: 0 20px;
-        }
-/* Styling for output icons */
-        .output-icon {
-            font-size: 30px;
-        }
-/* Styling for AND gate bulb */
-        .and-bulb {
-            color: red;
-        }
-/* Styling for OR gate bulb */
-        .or-bulb {
-            color: orange;
-        }
-/* Styling for NOR gate bulb */
-        .nor-bulb {
-            color: blue;
-        }
-/* Styling for XOR gate bulb */
-        .xor-bulb {
-            color: green;
-        }
-/* Styling for gate labels */
-        .gate-label {
-            font-size: 18px;
-            margin-right: 10px;
-            fill: white; /* Change text color to white */
-        }
-/* Tree styles */
-.tree {
-    position: relative;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid green;
-    margin-top: 5% ;
-    /* tried using relative spacing, making the tree a certain perentage from the top of the screen */
-}
-.trunk {
-            position: relative;
-            width: 27px;
-            height: 40px;
-            background-color: brown;
-            top: 100px;
-            left: -15px;
-        }
-/* Styling for dots */
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 1; /* Bring dots to the front */
-}
-
+        
     </style>
 </head>
 
@@ -292,10 +207,10 @@ function calculateDotPositions() {
     const containerHeight = document.querySelector('.container').offsetHeight; // Get the height of the container
 
     // Calculate positions for each dot
-    const dotOR = containerHeight * 1.56; // Top of the container
-    const dotAND = containerWidth * 0.85; // 5% from the left of the container
-    const dotNOR = containerWidth * 0.79; // 10% from the left of the container
-    const dotXOR = containerWidth * 0.83; // 15% from the left of the container
+    const dotOR = containerHeight * 1.45; // Top of the container
+    const dotAND = containerWidth * 0.80; // 5% from the left of the container
+    const dotNOR = containerWidth * 0.74; // 10% from the left of the container
+    const dotXOR = containerWidth * 0.78; // 15% from the left of the container
 
     // Set positions for each dot
     document.getElementById('dotOr').style.top = `${dotOR}px`;
