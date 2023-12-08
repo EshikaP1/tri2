@@ -227,8 +227,11 @@ function calculateDotPositions() {
 }
 
 // Calculate positions when the page loads
-window.onload = calculateDotPositions;
-
+window.onload = function () {
+        calculateDotPositions();
+        updateAndGate(); // Set initial state for AND gate
+        updateNorGate(); // Set initial state for NOR gate
+    };
 </script>
     
 </body>
