@@ -231,6 +231,8 @@ window.onload = function () {
         calculateDotPositions();
         updateAndGate(); // Set initial state for AND gate
         updateNorGate(); // Set initial state for NOR gate
+        updateXorGate();
+        updateOrGate();
     };
 </script>
     
