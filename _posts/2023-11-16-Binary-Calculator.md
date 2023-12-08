@@ -124,3 +124,46 @@ courses: { csp: {week: 13} }
 </script>
 </body>
 </html>
+
+## Number Guessing Game
+
+Welcome to the Number Guessing Game!
+
+I'm thinking of a number between 1 and 100. Try to guess the number.
+
+### Rules:
+- You have a maximum of 10 attempts to guess the number.
+- After each guess, you'll receive hints: "Too high" or "Too low."
+
+### How to Play:
+1. Enter a number between 1 and 100 in the input field provided.
+2. Submit your guess.
+
+### Guess the Number:
+<input type="text" id="userGuess" placeholder="Enter your guess...">
+<button onclick="checkGuess()">Submit Guess</button>
+
+<div id="hint"></div>
+
+<script>
+  let secretNumber = Math.floor(Math.random() * 100) + 1;
+  let attempts = 0;
+  const maxAttempts = 10;
+
+  function checkGuess() {
+    let userGuess = parseInt(document.getElementById('userGuess').value);
+    attempts++;
+
+    if (attempts <= maxAttempts) {
+      if (userGuess === secretNumber) {
+        document.getElementById('hint').innerHTML = `Congratulations! You've guessed the number ${secretNumber} in ${attempts} attempts!`;
+      } else if (userGuess < secretNumber) {
+        document.getElementById('hint').innerHTML = 'Too low! Try a higher number.';
+      } else {
+        document.getElementById('hint').innerHTML = 'Too high! Try a lower number.';
+      }
+    } else {
+      document.getElementById('hint').innerHTML = `Sorry, you've reached the maximum number of attempts. The number was ${secretNumber}.`;
+    }
+  }
+</script>
