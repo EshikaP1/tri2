@@ -166,4 +166,59 @@ I'm thinking of a number between 1 and 100. Try to guess the number.
       document.getElementById('hint').innerHTML = `Sorry, you've reached the maximum number of attempts. The number was ${secretNumber}.`;
     }
   }
+
+
+//snowflake
+document.addEventListener('DOMContentLoaded', function () {
+    const snowflakes = [];
+
+    function createSnowflake() {
+        const diameter = Math.floor(Math.random() * 16) + 5; // Random diameter between 5px and 20px
+        const speed = Math.floor(Math.random() * 20) + 10; // Random speed between 10px/sec and 30px/sec
+        const positionX = Math.random() < 0.5 ? // Random position within the leftmost or rightmost 17% of the screen
+            Math.floor(Math.random() * window.innerWidth * 0.17) : // Leftmost 17%
+            Math.floor(Math.random() * window.innerWidth * 0.17) + (window.innerWidth * 0.83); // Rightmost 17%
+        const positionY = Math.floor(Math.random() * window.innerHeight) + 1; // Random position within the window height
+
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.style.width = `${diameter}px`;
+        snowflake.style.height = `${diameter}px`;
+        snowflake.style.left = `${positionX}px`;
+        snowflake.style.top = `${positionY}px`;
+        document.body.appendChild(snowflake);
+
+        snowflakes.push({
+            element: snowflake,
+            diameter,
+            speed,
+            positionX,
+            positionY,
+        });
+    }
+
+    function updateSnowfall() {
+        for (const snowflake of snowflakes) {
+            snowflake.positionY += snowflake.speed / 10;
+            if (snowflake.positionY > window.innerHeight) {
+                snowflake.positionY = -10;
+            }
+            snowflake.element.style.top = `${snowflake.positionY}px`;
+        }
+
+        requestAnimationFrame(updateSnowfall);
+    }
+
+    function initializeSnowfall() {
+        for (let i = 0; i < 20; i++) {
+            createSnowflake();
+        }
+
+        updateSnowfall();
+    }
+
+    initializeSnowfall();
+});
+
+  
 </script>
