@@ -4,6 +4,5 @@ search_exclude: true
 ---
 
 
-# Our Group Repo 
+# Our Group Repo - Period 5
 Aditi Bharadwaj, Cindy Liang, Avanthika Daita, Nupur Bhalla, Eshika Pallapotu 
-Period 5
