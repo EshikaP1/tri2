@@ -234,21 +234,43 @@ window.onload = function () {
     };
 // Snowfall
 document.addEventListener('DOMContentLoaded', function () {
+    // Array to store information about each snowflake
     const snowflakes = [];
+
+    // Function to create a new snowflake
     function createSnowflake() {
-        const diameter = Math.floor(Math.random() * 16) + 5; // Random diameter between 5px and 20px
-        const speed = Math.floor(Math.random() * 20) + 10; // Random speed between 10px/sec and 30px/sec
-        const positionX = Math.random() < 0.5 ? // Random position within the leftmost or rightmost 25% of the screen
+        // Random diameter between 5px and 20px
+        const diameter = Math.floor(Math.random() * 16) + 5;
+
+        // Random speed between 10px/sec and 30px/sec
+        const speed = Math.floor(Math.random() * 20) + 10;
+
+        // Random position within the leftmost or rightmost 25% of the screen
+        const positionX = Math.random() < 0.5 ?
             Math.floor(Math.random() * window.innerWidth / 4) : // Leftmost 25%
             Math.floor(Math.random() * window.innerWidth / 4) + (window.innerWidth * 0.75); // Rightmost 25%
-        const positionY = Math.floor(Math.random() * window.innerHeight) + 1; // Random position within the window height
+
+        // Random position within the window height
+        const positionY = Math.floor(Math.random() * window.innerHeight) + 1;
+
+        // Create a new div element for the snowflake
         const snowflake = document.createElement('div');
+
+        // Set the class for styling (CSS styling required for appearance)
         snowflake.className = 'snowflake';
+
+        // Set width and height based on the random diameter
         snowflake.style.width = `${diameter}px`;
         snowflake.style.height = `${diameter}px`;
+
+        // Set the initial position of the snowflake
         snowflake.style.left = `${positionX}px`;
         snowflake.style.top = `${positionY}px`;
+
+        // Append the snowflake to the body of the document
         document.body.appendChild(snowflake);
+
+        // Store information about the snowflake in the array
         snowflakes.push({
             element: snowflake,
             diameter,
@@ -257,24 +279,41 @@ document.addEventListener('DOMContentLoaded', function () {
             positionY,
         });
     }
+
+    // Function to update the position of each snowflake and create the falling effect
     function updateSnowfall() {
         for (const snowflake of snowflakes) {
+            // Update the vertical position based on the speed
             snowflake.positionY += snowflake.speed / 10;
+
+            // If the snowflake goes below the window, reset its position to the top
             if (snowflake.positionY > window.innerHeight) {
                 snowflake.positionY = -10;
             }
+
+            // Set the updated top position for the snowflake
             snowflake.element.style.top = `${snowflake.positionY}px`;
         }
+
+        // Request the next animation frame to continue the animation
         requestAnimationFrame(updateSnowfall);
     }
+
+    // Function to initialize the snowfall by creating multiple snowflakes
     function initializeSnowfall() {
+        // Create 30 snowflakes
         for (let i = 0; i < 30; i++) {
             createSnowflake();
         }
+
+        // Start the animation
         updateSnowfall();
     }
+
+    // Call the initialization function when the DOM content is fully loaded
     initializeSnowfall();
-}); 
+});
+
 </script>
     
 </body>
