@@ -3,7 +3,7 @@ toc: false
 comments: false
 layout: post
 title: Binary Calculator
-description: "For our calculator, we aim to feature various backgrounds and themes. Leveraging SASS, we will establish a primary theme characterized by a rainbow background and calculator buttons in a shade approximating #ADD8E6. Upon activating the switch button to access the graphing calculator, the color scheme will transform into monochromatic tones, featuring a black background with the same blue buttons.We plan to develop the calculator by associating each number with its binary representation. The implementation will involve HTML and JavaScript to create the functional calculator, offering features comparable to a standard calculator. Initially, it will function as a basic four-operation calculator. However, we intend to incorporate a toggle switch that, when activated, transforms it into a graphing calculator with additional capabilities."
+description: "A binary calculator to teach people about binary and math"
 type: ccc
 courses: { csp: {week: 13} }
 ---
@@ -53,10 +53,10 @@ courses: { csp: {week: 13} }
 <body>
 <h1>Binary Calculator</h1>
 <form id="BinaryCalculator">
-    <label for="num1">Decimal Number 1:</label>
+    <label for="num1">Number 1:</label>
     <input type="text" id="num1" placeholder="Enter decimal number">
     <br>
-    <label for="num2">Decimal Number 2:</label>
+    <label for="num2">Number 2:</label>
     <input type="text" id="num2" placeholder="Enter decimal number">
     <br>
     <button type="button" onclick="performOperation('add')">Addition (+)</button>
@@ -69,15 +69,10 @@ courses: { csp: {week: 13} }
 </form>
 <div class="keyboard">
     <!-- Generate number buttons from 0 to 9 for num1 -->
-    <script>
+
+ <script>
         for (var i = 0; i <= 9; i++) {
             document.write("<button data-input-id='num1' onclick=\"addToInput('" + i + "')\">" + i + "</button>");
-        }
-    </script>
-    <!-- Generate number buttons from 0 to 9 for num2 -->
-    <script>
-        for (var i = 0; i <= 9; i++) {
-            document.write("<button data-input-id='num2' onclick=\"addToInput('" + i + "')\">" + i + "</button>");
         }
     </script>
 </div>
