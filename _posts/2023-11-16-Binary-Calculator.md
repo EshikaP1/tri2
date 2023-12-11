@@ -8,6 +8,7 @@ type: ccc
 courses: { csp: {week: 13} }
 ---
 
+
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -49,27 +50,13 @@ courses: { csp: {week: 13} }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary Calculator</title>
-<<<<<<< HEAD
-
-
-
-git pu
-git
-=======
->>>>>>> 44f74c8bf1dc36a14d49f3675280507598290b7a
 </head>
 <body>
-<h1>Binary Calculator</h1>
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 44f74c8bf1dc36a14d49f3675280507598290b7a
 <form id="BinaryCalculator">
-    <label for="num1">Number 1:</label>
+    <label for="num1">Decimal Number 1:</label>
     <input type="text" id="num1" placeholder="Enter decimal number">
     <br>
-    <label for="num2">Number 2:</label>
+    <label for="num2">Decimal Number 2:</label>
     <input type="text" id="num2" placeholder="Enter decimal number">
     <br>
     <button type="button" onclick="performOperation('add')">Addition (+)</button>
@@ -82,32 +69,24 @@ git
 </form>
 <div class="keyboard">
     <!-- Generate number buttons from 0 to 9 for num1 -->
-
- <script>
+    <script>
         for (var i = 0; i <= 9; i++) {
             document.write("<button data-input-id='num1' onclick=\"addToInput('" + i + "')\">" + i + "</button>");
         }
     </script>
+
 </div>
 <script>
     function performOperation(operation) {
         var num1 = parseInt(document.getElementById("num1").value, 10) || 0;
         var num2 = parseInt(document.getElementById("num2").value, 10) || 0;
         var resultField = document.getElementById("result");
-<<<<<<< HEAD
-
-=======
->>>>>>> 44f74c8bf1dc36a14d49f3675280507598290b7a
         switch (operation) {
             case 'add':
                 resultField.value = decimalToBinary(num1 + num2);
                 break;
             case 'subtract':
-<<<<<<< HEAD
-                resultField.value = decimalToBinary(num1 - num2);
-=======
                 resultField.value = decimalToBinary(subtractWithOnesComplement(num1, num2));
->>>>>>> 44f74c8bf1dc36a14d49f3675280507598290b7a
                 break;
             case 'multiply':
                 resultField.value = decimalToBinary(num1 * num2);
@@ -128,16 +107,6 @@ git
         return num1 + twosComplementNum2;
     }
     function decimalToBinary(decimalNum) {
-<<<<<<< HEAD
-        return (decimalNum >>> 0).toString(2);
-    }
-
-    function addToInput(number) {
-        var activeInput = document.activeElement;
-
-        if (activeInput.tagName === "INPUT" && activeInput.type === "text") {
-            activeInput.value += number;
-=======
         if (decimalNum < 0) {
             // Convert negative numbers to binary using 32 bits
             return (decimalNum >>> 0).toString(2);
@@ -158,11 +127,8 @@ git
                 targetInput.value += number;
                 targetInput.focus(); // Focus on the input
             }
->>>>>>> 44f74c8bf1dc36a14d49f3675280507598290b7a
         }
     }
-
-  
 </script>
 </body>
 </html>
