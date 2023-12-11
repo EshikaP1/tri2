@@ -14,7 +14,7 @@ courses: { csp: {week: 13} }
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--scales the code to the dimensions of the computer-->
-</head>
+
 
 <body>
     <!-- Main content container -->
@@ -191,10 +191,10 @@ function calculateDotPositions() {
     const containerHeight = document.querySelector('.container').offsetHeight; // Get the height of the container
 
     // Calculate positions for each dot
-    const dotOR = containerHeight * 1.49; // Top of the container
-    const dotAND = containerWidth * 0.80; // 5% from the left of the container
-    const dotNOR = containerWidth * 0.76; // 10% from the left of the container
-    const dotXOR = containerWidth * 0.82; // 15% from the left of the container
+    const dotOR = containerHeight * 1.455; // Top of the container
+    const dotAND = containerWidth * 0.775; // 5% from the left of the container
+    const dotNOR = containerWidth * 0.735; // 10% from the left of the container
+    const dotXOR = containerWidth * 0.785; // 15% from the left of the container
 
     // Set positions for each dot
     document.getElementById('dotOr').style.top = `${dotOR}px`;
