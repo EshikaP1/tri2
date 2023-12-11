@@ -8,14 +8,12 @@ type: ccc
 courses: { csp: {week: 13} }
 ---
 <html lang="en">
+<!--Aditi>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--scales the code to the dimensions of the computer-->
-    <style>
-        
-    </style>
 </head>
 
 <body>

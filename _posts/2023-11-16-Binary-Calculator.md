@@ -61,10 +61,10 @@ courses: { csp: {week: 13} }
 <body>
     <h1>Binary Calculator</h1>
     <form id="BinaryCalculator">
-        <label for="num1">Decimal Number 1:</label>
+        <label for="num1">Base 10 Number 1:</label>
         <input type="text" id="num1" placeholder="Enter decimal number">
         <br>
-        <label for="num2">Decimal Number 2:</label>
+        <label for="num2">Base 10 Number 2:</label>
         <input type="text" id="num2" placeholder="Enter decimal number">
         <br>
         <button type="button" onclick="performOperation('add')">Addition (+)</button>
