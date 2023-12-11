@@ -31,13 +31,8 @@ courses: { csp: {week: 13} }
                 <button id="andButton2" class="button" onclick="toggleButton('and', 2)">0</button>
             </div>
             <!-- SVG representation of AND gate -->
-            <svg width="150" height="70">
-                <text x="35" y="60" font-size="12" fill="white">AND</text>
-                <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2" />
-                <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2" />
-                <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2" />
-                <circle id="andGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
-            </svg>
+            <svg width="150" height="70"> <text x="35" y="60" font-size="12" fill="white">AND</text> <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2" /> <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2" /> <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2" /> <circle id="andGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
+</svg>
             <!-- Output icon for AND gate -->
             <div class="button-container">
                 <i id="andOutputIcon" class="fas fa-lightbulb output-icon and-bulb"></i>
@@ -46,7 +41,7 @@ courses: { csp: {week: 13} }
             <div class="dot" id="dotAnd" style="top: 70px; left: 25px;" onclick="changeDotColor('dotAnd')"></div>
         </div>
 
-        <!-- OR Gate -->
+<!-- OR Gate -->
 <div class="gate-container">
             <!-- Button 1 for OR gate -->
             <div class="button-container">
@@ -57,13 +52,8 @@ courses: { csp: {week: 13} }
                 <button id="orButton2" class="button" onclick="toggleButton('or', 2)">0</button>
             </div>
             <!-- SVG representation of OR gate -->
-            <svg width="150" height="70">
-                <text x="35" y="60" font-size="12" fill="white">OR</text>
-                <line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2" />
-                <line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2" />
-                <line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2" />
-                <circle id="orGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
-            </svg>
+            <svg width="150" height="70"> <text x="35" y="60" font-size="12" fill="white">OR</text><line x1="0" y1="25" x2="50" y2="25" stroke="white" stroke-width="2" /><line x1="70" y1="15" x2="70" y2="35" stroke="white" stroke-width="2" /><line x1="50" y1="25" x2="70" y2="25" stroke="white" stroke-width="2" /><circle id="orGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
+</svg>
             <!-- Output icon for OR gate -->
             <div class="button-container">
                 <i id="orOutputIcon" class="fas fa-lightbulb output-icon or-bulb"></i>
@@ -83,10 +73,8 @@ courses: { csp: {week: 13} }
                 <button id="norButton2" class="button" onclick="toggleButton('nor', 2)">0</button>
             </div>
             <!-- SVG representation of NOR gate -->
-            <svg width="150" height="70">
-                <text x="35" y="60" font-size="12" fill="white">NOR</text>
-                <circle id="norGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
-            </svg>
+            <svg width="150" height="70"><text x="35" y="60" font-size="12" fill="white">NOR</text><circle id="norGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
+</svg>
             <!-- Output icon for NOR gate -->
             <div class="button-container">
                 <i id="norOutputIcon" class="fas fa-lightbulb output-icon nor-bulb"></i>
@@ -95,7 +83,7 @@ courses: { csp: {week: 13} }
             <div class="dot" id="dotNor" style="top: 70px; left: 170px;" onclick="changeDotColor('dotNor')"></div>
         </div>
 
-        <!-- XOR Gate -->
+<!-- XOR Gate -->
 <div class="gate-container">
             <!-- Button 1 for XOR gate -->
             <div class="button-container">
@@ -106,10 +94,7 @@ courses: { csp: {week: 13} }
                 <button id="xorButton2" class="button" onclick="toggleButton('xor', 2)">0</button>
             </div>
             <!-- SVG representation of XOR gate -->
-            <svg width="150" height="70">
-                <text x="35" y="60" font-size="12" fill="white">XOR</text>
-                <circle id="xorGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" />
-            </svg>
+            <svg width="150" height="70"> <text x="35" y="60" font-size="12" fill="white">XOR</text> <circle id="xorGateOutput" cx="0" cy="25" r="5" fill="white" stroke="white" stroke-width="2" /> </svg>
             <!-- Output icon for XOR gate -->
             <div class="button-container">
                 <i id="xorOutputIcon" class="fas fa-lightbulb output-icon xor-bulb"></i>
@@ -117,19 +102,19 @@ courses: { csp: {week: 13} }
             <!-- Dot for XOR gate light -->
             <div class="dot" id="dotXor" style="top: 70px; left: 245px;" onclick="changeDotColor('dotXor')"></div>
         </div>
-
-        <!-- Tree -->
+<!-- Eshika -->
+ <!-- Tree -->
 <div class="tree">
             <div class="trunk"></div>
         </div>
     </div>
 
-    <!-- Font Awesome (icons) (the lights) -->
+ <!-- Font Awesome (icons) (the lights) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha384-9a2a2PZMZJ4fuXRiK7ujL3IOIRcm6SjFayZBS1G3uMMLr5Z/2q5U1dd2Yiz5Mlks"
         crossorigin="anonymous">
 
-    <!-- JavaScript for gate logic -->
+<!-- JavaScript for gate logic -->
 <script>
         // Gate state variables
         let andGateState = [true, false];
@@ -198,6 +183,7 @@ function toggleButton(gate, button) {
             document.getElementById('dotXor').style.backgroundColor = output ? 'darkgreen' : 'white';
         }
 
+// Cindy
 
 // Function to calculate dot positions relative to the top of the page
 function calculateDotPositions() {
