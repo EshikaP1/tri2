@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Logic Gate Project
 description: N/A
-type: ccc
+type: #ccc
 courses: { csp: {week: 13} }
 ---
 
