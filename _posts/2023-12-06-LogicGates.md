@@ -206,8 +206,8 @@ function calculateDotPositions() {
 
     // Calculate positions for each dot
     const dotOR = containerHeight * 1.49; // Top of the container
-    const dotAND = containerWidth * 0.84; // 5% from the left of the container
-    const dotNOR = containerWidth * 0.78; // 10% from the left of the container
+    const dotAND = containerWidth * 0.80; // 5% from the left of the container
+    const dotNOR = containerWidth * 0.76; // 10% from the left of the container
     const dotXOR = containerWidth * 0.82; // 15% from the left of the container
 
     // Set positions for each dot
