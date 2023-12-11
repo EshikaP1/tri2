@@ -42,7 +42,4 @@ courses: { csp: {week: 13} }
   - Consequences for violations may include fines, with specific amounts (e.g., $250,000) depending on the case.
 
 
-![C](https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg 
-)
-
 <img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
