@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Logic Gates (Final)
-description: N/A
+description: A logic gate Christmas Tree based on binary
 type: ccc
 courses: { csp: {week: 13} }
 ---
