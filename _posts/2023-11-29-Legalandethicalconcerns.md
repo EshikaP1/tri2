@@ -36,10 +36,11 @@ courses: { csp: {week: 13} }
   - Intellectual Property (IP) results from creative efforts and is protected by copyright.
   - Copyright ensures exclusive usage rights, requiring permission for use.
 
+  <img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
+
 - **Consequences of Violations:**
   - Plagiarism, presenting someone else's work as your own, is against the law.
   - Legal avenues for using others' work include licenses such as Creative Commons, open source, and open access.
   - Consequences for violations may include fines, with specific amounts (e.g., $250,000) depending on the case.
 
 
-<img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
