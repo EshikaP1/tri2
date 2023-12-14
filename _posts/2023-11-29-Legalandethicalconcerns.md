@@ -46,3 +46,21 @@ courses: { csp: {week: 13} }
 )
 
 <img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
+
+
+
+
+
+## Homework
+
+
+1. Describe the key differences between the Creative Commons Zero v1.0 Universal, Open Source MIT License, and Open Source GPL License.
+
+2. Give examples that illustrate how companies, such as Qualcomm and Red Hat, have leveraged Open Source licenses to establish unique business models.
+
+3. Why are businesses that heavily rely on Open Source software still need to generate income and how they manage this within the constraints of Open Source licenses.
+
+
+# Extra Credit 
+
+Explain the significance of choosing an appropriate license for personal and team GitHub repositories, especially for the CPT project. How does this relate to the broader themes of legal and ethical concerns in computing?
