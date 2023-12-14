@@ -24,6 +24,9 @@ courses: { csp: {week: 13} }
   - Legal utilization involves seeking permission from the creator.
   - Proper citation is essential when using material created by others.
 
+## Popcorn Hack #1
+Can you give an two different examples of how you might use citations in everyday life? (1 chocolate per answer, 3 answers total)
+
 - **Broad Access to Digital Information:**
   - Creative Commons, open source, and open access contribute to widespread access to digital content.
 
@@ -36,16 +39,17 @@ courses: { csp: {week: 13} }
   - Intellectual Property (IP) results from creative efforts and is protected by copyright.
   - Copyright ensures exclusive usage rights, requiring permission for use.
 
+  <img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
+
 - **Consequences of Violations:**
   - Plagiarism, presenting someone else's work as your own, is against the law.
   - Legal avenues for using others' work include licenses such as Creative Commons, open source, and open access.
-  - Consequences for violations may include fines, with specific amounts (e.g., $250,000) depending on the case.
+  - People can face fines and prision sentences depending of the severity fo the case. 
+
+## Popcorn Hack #2
+If a person copies and earns $2,500 from plagairized work what legal reprecussions could they face? Would they face fines or prision sentences, and for how long?
 
 
-![C](https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg 
-)
-
-<img src="https://static.vecteezy.com/system/resources/previews/000/582/676/original/copyright-symbol-icon-vector-illustration.jpg" alt="Copyright Symbol" width="200" height="200">
 
 
 

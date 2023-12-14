@@ -301,7 +301,53 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
-    
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-9a2a2PZMZJ4fuXRiK7ujL3IOIRcm6SjFayZBS1G3uMMLr5Z/2q5U1dd2Yiz5Mlks"
+        crossorigin="anonymous">
+    <style>
+        /* Add your CSS styles here */
+        #santa {
+            transition: transform 4s ease-in-out; /* Smooth transition over 4 seconds */
+            transform: translate(-500px, -1000px); /* Initial position 50 pixels from the left and 50 pixels from the top */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sled-container">
+        <img id="santa"
+            src="https://media.istockphoto.com/id/1357890877/vector/cute-dancing-santa-claus-christmas-vector-illustration.jpg?s=2048x2048&w=is&k=20&c=BfiZPbkwcY747vcMMDqgckQRgkJwH27lCeMXTn5N-z4="
+            alt="Santa Claus on a sled" style="width: 100px;">
+        <div id="sled"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const santa = document.getElementById("santa");
+            const containerWidth = window.innerWidth;
+            const containerHeight = window.innerHeight;
+            // Function to make Santa on a sled zigzag across the page
+            function zigzagSanta() {
+                santa.style.transform = `translate(0, 0)`; // Start at the top-left corner
+                setTimeout(() => {
+                    santa.style.transform = `translate(${containerWidth - 150}px, ${containerHeight - 150}px)`; // Move to the bottom-right corner
+                }, 0);
+            }
+            // Call zigzagSanta function every 4 seconds
+            setInterval(zigzagSanta, 4000);
+            // Initial call to start the zigzag animation
+            zigzagSanta();
+        });
+    </script>
+</body>
+
+</html>
+
 </body>
 
 </html>
