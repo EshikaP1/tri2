@@ -75,7 +75,8 @@ Plagiarism can have serious consequences, especially in the world of academia. I
 It's not difficult in the age of image searches and Turnitin.com to be caught plagiarizing or violating copyright. It can also be incredibly disheartening for content creators to see their hard work taken without permission or credit.
 
 
-
+GPL and Black Duck:
+In companies like Qualcomm, patents have been a way for the company to gain revenue. However, a term known as GPL(General public licence) can create clashes with the legal rights of patents. GPL is known as the right for users to manipulate and use the software to their own benefits. GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it. An example is linux. Linux is open-source software, and users have the freedom to view, modify, and distribute the source code, provided they also distribute any modifications under the same GPL license terms. 
 
 
 
