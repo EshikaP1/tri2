@@ -24,13 +24,13 @@ courses: { csp: {week: 13} }
 - Legal utilization involves seeking permission from the creator.
 - Proper citation is essential when using material created by others.
 
-# <span style="color:pink">Popcorn Hack #1</span>
+# <span style="color:green">Popcorn Hack #1</span>
 Can you give an two different examples of how you might use citations in everyday life? (1 chocolate per answer, 3 answers total)
 
-<span style="color:pink">Broad Access to Digital Information:</span>
+# <span style="color:pink">Broad Access to Digital Information:</span>
 - Creative Commons, open source, and open access contribute to widespread access to digital content.
 
-- **<span style="color:pink">Legal and Ethical Implications of Computing:</span>**
+# <span style="color:pink">Legal and Ethical Implications of Computing:</span>
   - Computing has legal and ethical considerations, especially in social and political contexts.
   - The digital divide raises ethical concerns about unequal access to technology.
   - Innovations like biased algorithms and data-collecting devices pose legal and ethical challenges.
@@ -86,6 +86,33 @@ In companies like Qualcomm, patents have been a way for the company to gain reve
 - **Key Components:** Includes the GNU Compiler Collection (GCC) and essential libraries, forming the foundation for various software applications.
 
 ![GNU](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6qh-kaBG2vPgs2jlqRZg_3QEbiILMnlyqqc8natIfYKrubOLggJGNhFp4s69f_NLzLVw&usqp=CAU)
+
+<span style="color:pink"> Android vs Apple Copyright Case </span>
+
+- Apple sued Samsung in 2011 for copyright infringements
+- 7-year-long patent that resulted in a $1 billion ruling in Apple’s favor
+- Involved with similarities between the Apple iPhone and Samsung’s Galaxy S line
+- In 2014, the jury found in favor of Apple, awarding Apple almost $120 million for patent violations. However, the jury also found Apple also infringed Samsung’s patents, awarding $158,400
+- In the end, Samsung faced heavy losses but was able to gain more market recognition and grow its business ventures. 
+- Helped set the precedent for patent and copyright cases
+
+### Red Hat Legal Considerations:
+
+1. **Open Source Compliance:**
+   - Crucial adherence to open-source licenses.
+   - Non-compliance may lead to legal actions and reputational damage.
+
+2. **Patent Litigation:**
+   - Potential facing of patent infringement claims.
+   - Costly legal battles impacting product delivery.
+   - Claims involve unauthorized use of patented inventions, especially in software and open-source technologies.
+
+3. **Intellectual Property Protection:**
+   - Balancing intellectual property protection with open-source principles is crucial for Red Hat.
+
+4. **Data Privacy and Security:**
+   - Strict compliance with data protection laws is essential.
+   - Breaches may result in legal consequences and regulatory penalties for Red Hat.
 
 # <span style="color:pink">Homework</span>
 
