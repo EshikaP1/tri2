@@ -53,16 +53,24 @@ If a person copies and earns $2,500 from plagiarized work what legal repercussio
 
 Copyright is the legal right that the creator of a work has to it. The WIPO defines two types of rights under copyright:
 
-## <span style="color:pink">Economic Rights:</span>
-rights to financial benefits from the use of the work
-## <span style="color:pink">Moral Rights:</span>
-rights that aren't financial but are still important. For example, the right to claim authorship or the right to prevent harmful changes.
+
+ Economic Rights: rights to financial benefits from the use of the work
+
+ Moral rights :rights that aren't financial but are still important. For example, the right to claim authorship or the right to prevent harmful changes.
 
 Copyright is not a new concept. Copyright laws have been around since the 18th century. However, the digital age has created new challenges to copyright and demands new ways to protect it as well.
 
-Before you use or repost content from the internet, you have to consider copyright. Just because a piece of art or an image can be easily found on the internet doesn't mean that it's free to use, especially not if you're turning a profit.
+ Positives: 
 
-Check what the copyright license is on all online content before you use it. Some pieces of content require permission from the creator before being used. Some pieces aren't allowed to be used for financial purposes. Even if this isn't the case, you should always cite any material you use that you didn't create as good practice.
+- Copyright gives the creator the right to prevent others from exploiting their work.
+- Copyright promotes fair innovation.
+Copyright provides financial benefits to users.
+
+Negatives of copyright:
+
+- Copyright laws can get in the way of creative freedom as creators can get scared of  building upon previous works because of copyright protection.
+- Copyright only offers limited protection. For example, copyright protects a particular expression of an idea (as in images, words or sounds) but it does not protect the idea or concept itself. 
+
 
 Using content created by someone else without permission or citation can have consequences, such as a fine or an order to remove copyrighted content.
 
