@@ -13,9 +13,9 @@ courses: { csp: {week: 13} }
 - Creations on a computer are owned by the creator or organization.
 - Concerns arise with the easy access and distribution of digital content, emphasizing the need for protective measures.
 - Licensing options include:
-    - Creative Commons, offering clear usage guidelines for intellectual property (IP).
-    - Open source, allowing free use, redistribution, and modification of programs.
-    - Open Access, enabling unrestricted access to online research.
+  - Creative Commons, offering clear usage guidelines for intellectual property (IP).
+  - Open source, allowing free use, redistribution, and modification of programs.
+  - Open Access, enabling unrestricted access to online research.
 
 ![Commit](https://teaching.resources.osu.edu/sites/default/files/styles/max_3840x3840/public/2022-12/CreativeCommonsGraphic.jpg?itok=LmaLpQYa)
 
