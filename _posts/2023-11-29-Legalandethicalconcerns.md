@@ -12,20 +12,20 @@ courses: { csp: {week: 13} }
 ## <span style="color:pink">Ownership and Licensing:</span>
 - Creations on a computer are owned by the creator or organization.
 - Concerns arise with the easy access and distribution of digital content, emphasizing the need for protective measures.
-- Licensing options include:
-  - Creative Commons, offering clear usage guidelines for intellectual property (IP).
-  - Open source, allowing free use, redistribution, and modification of programs.
-  - Open Access, enabling unrestricted access to online research.
+Licensing options include:
+- Creative Commons, offering clear usage guidelines for intellectual property (IP).
+- Open source, allowing free use, redistribution, and modification of programs.
+- Open Access, enabling unrestricted access to online research.
 
 ![Commit](https://teaching.resources.osu.edu/sites/default/files/styles/max_3840x3840/public/2022-12/CreativeCommonsGraphic.jpg?itok=LmaLpQYa)
 
 ## <span style="color:pink">Ethical Use and Citation:</span>
-- Unauthorized use of someone else's work is plagiarism, carrying legal consequences.
-- Legal utilization involves seeking permission from the creator.
-- Proper citation is essential when using material created by others.
++ Unauthorized use of someone else's work is plagiarism, carrying legal consequences.
++ Legal utilization involves seeking permission from the creator.
++ Proper citation is essential when using material created by others.
 
 ## <span style="color:cadetblue">Popcorn Hack #1</span>
-Can you give an two different examples of how you might use citations in everyday life? (1 chocolate per answer, 3 answers total)
++ Can you give an two different examples of how you might use citations in everyday life? (1 chocolate per answer, 3 answers total)
 
 ## <span style="color:pink">Broad Access to Digital Information:</span>
 - Creative Commons, open source, and open access contribute to widespread access to digital content.
@@ -53,10 +53,9 @@ If a person copies and earns $2,500 from plagiarized work what legal repercussio
 
 Copyright is the legal right that the creator of a work has to it. The WIPO defines two types of rights under copyright:
 
+Economic Rights: rights to financial benefits from the use of the work
 
- Economic Rights: rights to financial benefits from the use of the work
-
- Moral rights :rights that aren't financial but are still important. For example, the right to claim authorship or the right to prevent harmful changes.
+Moral rights :rights that aren't financial but are still important. For example, the right to claim authorship or the right to prevent harmful changes.
 
 Copyright is not a new concept. Copyright laws have been around since the 18th century. However, the digital age has created new challenges to copyright and demands new ways to protect it as well.
 
@@ -115,22 +114,21 @@ It's not difficult in the age of image searches and Turnitin.com to be caught pl
 
 
 ### <span style="color:pink"> Redhat Legal Implications </span>
+Open Source Compliance:
+- Crucial adherence to open-source licenses.
+- Non-compliance may lead to legal actions and reputational damage.
 
-- Open Source Compliance:
-   - Crucial adherence to open-source licenses.
-   - Non-compliance may lead to legal actions and reputational damage.
+Patent Litigation:
+- Potential facing of patent infringement claims.
+- Costly legal battles impacting product delivery.
+- Claims involve unauthorized use of patented inventions, especially in software and open-source technologies.
 
-- Patent Litigation:
-   - Potential facing of patent infringement claims.
-   - Costly legal battles impacting product delivery.
-   - Claims involve unauthorized use of patented inventions, especially in software and open-source technologies.
+Intellectual Property Protection:*
+- Balancing intellectual property protection with open-source principles is crucial for Red Hat.
 
-- Intellectual Property Protection:*
-   - Balancing intellectual property protection with open-source principles is crucial for Red Hat.
-
-- Data Privacy and Security:
-   - Strict compliance with data protection laws is essential.
-   - Breaches may result in legal consequences and regulatory penalties for Red Hat.
+Data Privacy and Security:
+- Strict compliance with data protection laws is essential.
+- Breaches may result in legal consequences and regulatory penalties for Red Hat.
 
 # <span style="color:cadetblue">Homework</span>
 
