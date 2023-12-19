@@ -49,8 +49,34 @@ Can you give an two different examples of how you might use citations in everyda
 ## Popcorn Hack #2
 If a person copies and earns $2,500 from plagairized work what legal reprecussions could they face? Would they face fines or prision sentences, and for how long?
 
+# Copyright and Intellectual Property
+
+Copyright is the legal right that the creator of a work has to it. The WIPO defines two types of rights under copyright:
+
+- **Economic Rights:** rights to financial benefits from the use of the work
+- **Moral Rights:** rights that aren't financial, but are still important. For example, the right to claim authorship or the right to prevent harmful changes.
+
+Copyright is not a new concept. Copyright laws have been around since the 18th century. However, the digital age has created new challenges to copyright and demands new ways to protect it as well.
+
+Before you use or repost content from the internet, you have to consider copyright. Just because a piece of art or an image can be easily found on the internet doesn't mean that it's free to use, especially not if you're turning a profit.
+
+Check what the copyright license is on all online content before you use it. Some pieces of content require permission from the creator before being used. Some pieces aren't allowed to be used for financial purposes. Even if this isn't the case, you should always cite any material you use that you didn't create as good practice.
+
+Using content created by someone else without permission or citation can have consequences, such as a fine or an order to remove copyrighted content.
+
+If you claim the said content was your own, even unintentionally, you might be found guilty of plagiarism.
+
+## Plagiarism
+
+Plagiarism is when you take the content of someone else and claim it as your own. The most common type of plagiarism students hear about is the plagiarism of written ideas and/or phrases. It's possible to accidentally plagiarize by simply forgetting to cite the original source of an idea or phrase.
+
+Plagiarism can have serious consequences, especially in the world of academia. It can get students expelled and see the careers of professors destroyed. Furthermore, there could be legal consequences as well.
+
+It's not difficult in the age of image searches and Turnitin.com to be caught plagiarizing or violating copyright. It can also be incredibly disheartening for content creators to see their hard work taken without permission or credit.
 
 
+GPL and Black Duck:
+In companies like Qualcomm, patents have been a way for the company to gain revenue. However, a term known as GPL(General public licence) can create clashes with the legal rights of patents. GPL is known as the right for users to manipulate and use the software to their own benefits. GPL protect your rights with two steps: (1) assert copyright on the software, and (2) offer you this License giving you legal permission to copy, distribute and/or modify it. An example is linux. Linux is open-source software, and users have the freedom to view, modify, and distribute the source code, provided they also distribute any modifications under the same GPL license terms. 
 
 
 
