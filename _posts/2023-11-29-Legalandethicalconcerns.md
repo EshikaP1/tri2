@@ -7,7 +7,7 @@ description: A lesson on the legal and ethical concerns of technology! By Aditi,
 type: ccc
 courses: { csp: {week: 13} }
 ---
-# <span style="color:aquamarine">LEGAL AND ETHICAL CONCERNS OF TECHNOLOGY</span> 
+# <span style="color:cadetblue">LEGAL AND ETHICAL CONCERNS OF TECHNOLOGY</span> 
 
 ## <span style="color:pink">Ownership and Licensing:</span>
 - Creations on a computer are owned by the creator or organization.
@@ -24,7 +24,7 @@ courses: { csp: {week: 13} }
 - Legal utilization involves seeking permission from the creator.
 - Proper citation is essential when using material created by others.
 
-## <span style="color:aquamarine">Popcorn Hack #1</span>
+## <span style="color:cadetblue">Popcorn Hack #1</span>
 Can you give an two different examples of how you might use citations in everyday life? (1 chocolate per answer, 3 answers total)
 
 ## <span style="color:pink">Broad Access to Digital Information:</span>
@@ -46,7 +46,7 @@ Can you give an two different examples of how you might use citations in everyda
   - Legal avenues for using others' work include licenses such as Creative Commons, open source, and open access.
   - People can face fines and prison sentences depending on the severity of the case.
 
-# <span style="color:aquamarine">Popcorn Hack #2</span>
+# <span style="color:cadetblue">Popcorn Hack #2</span>
 If a person copies and earns $2,500 from plagiarized work what legal repercussions could they face? Would they face fines or prison sentences, and for how long?
 
 ## <span style="color:pink">Copyright and Intellectual Property</span>
@@ -103,6 +103,9 @@ It's not difficult in the age of image searches and Turnitin.com to be caught pl
 - In the end, Samsung faced heavy losses but was able to gain more market recognition and grow its business ventures. 
 - Helped set the precedent for patent and copyright cases
 
+![Alt text](https://media.licdn.com/dms/image/D5612AQGYztj8Aq-JiA/article-cover_image-shrink_720_1280/0/1699026753386?e=2147483647&v=beta&t=8l4-7teXuM3vwBfD8KbNgRzppqQipyALdsoU6ZcYowY)
+
+
 ### <span style="color:pink"> Redhat Legal Implications </span>
 
 - Open Source Compliance:
@@ -121,7 +124,7 @@ It's not difficult in the age of image searches and Turnitin.com to be caught pl
    - Strict compliance with data protection laws is essential.
    - Breaches may result in legal consequences and regulatory penalties for Red Hat.
 
-# <span style="color:aquamarine">Homework</span>
+# <span style="color:cadetblue">Homework</span>
 
 1. Describe the key differences between the Creative Commons Zero v1.0 Universal, Open Source MIT License, and Open Source GPL License.
 
@@ -129,6 +132,6 @@ It's not difficult in the age of image searches and Turnitin.com to be caught pl
 
 3. Why are businesses that heavily rely on Open Source software still need to generate income and how they manage this within the constraints of Open Source licenses.
 
-# <span style="color:blue">Extra Credit</span>
+# <span style="color:cadetblue">Extra Credit</span>
 
 Explain the significance of choosing an appropriate license for personal and team GitHub repositories, especially for the CPT project. How does this relate to the broader themes of legal and ethical concerns in computing?
