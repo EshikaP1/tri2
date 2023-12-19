@@ -54,8 +54,7 @@ If a person copies and earns $2,500 from plagairized work what legal reprecussio
 
 
 
-
-## Homework
+# <strong>Homework</strong>
 
 
 1. Describe the key differences between the Creative Commons Zero v1.0 Universal, Open Source MIT License, and Open Source GPL License.
@@ -65,6 +64,6 @@ If a person copies and earns $2,500 from plagairized work what legal reprecussio
 3. Why are businesses that heavily rely on Open Source software still need to generate income and how they manage this within the constraints of Open Source licenses.
 
 
-# Extra Credit 
+## Extra Credit 
 
 Explain the significance of choosing an appropriate license for personal and team GitHub repositories, especially for the CPT project. How does this relate to the broader themes of legal and ethical concerns in computing?
