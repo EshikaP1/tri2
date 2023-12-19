@@ -7,7 +7,6 @@ description: A lesson on the legal and ethical concerns of techonology! By Aditi
 type: ccc
 courses: { csp: {week: 13} }
 ---
-## College Board Notes 
 
 - **Ownership and Licensing:**
   - Creations on a computer are owned by the creator or organization.
